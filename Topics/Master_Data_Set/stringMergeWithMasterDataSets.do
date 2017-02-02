@@ -7,13 +7,13 @@
 	import delimited using "$monitorRaw/farmer_monitoring_data.csv"
 
 	*Common different spelling
-	replace first_name = "Christopher" 	if frist_name == "Christoffer" 	& last_name == "Smith" 		 & village == "River Creek"
+	replace first_name = "Christopher" 	if first_name == "Christoffer" 	& last_name == "Smith" 		 & village == "River Creek"
 
 	*Translitteration decreptancies from languages with different script
-	replace first_name = "Mahmood" 		if frist_name == "Mahmod" 		& last_name == "Al-Meghribi" & village == "Mountain Bend"
+	replace first_name = "Mahmood" 		if first_name == "Mahmod" 		& last_name == "Al-Meghribi" & village == "Mountain Bend"
 
 	*Applying the case convention used in the maste data set
-	replace first_name = "Rose" 		if frist_name == "ROSE" 		& last_name == "Jones" 		 & village == "Meadow Spring"
+	replace first_name = "Rose" 		if first_name == "ROSE" 		& last_name == "Jones" 		 & village == "Meadow Spring"
 
 	/*Merge the monitoring data set with the master data set. This step will 
 		require a lot of preperation and it is common that one have to go back 
