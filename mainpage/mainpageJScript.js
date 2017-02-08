@@ -1,7 +1,7 @@
 function dispTopics_lc(topicArray)
   {
     var topicTable = '<div class="table-div"><table style="width:100%">';
-    topicTable += '<col width=30%><col width=70%><tr>';
+    topicTable += '<col width=20%><col width=80%><tr>';
     topicTable += '<td rowspan="2">'+ topicArray[0] +'</td>';
     topicTable += '<td class="td_lc_titl">'+ topicArray[1] +'</td>';
     topicTable += '</tr><tr>';

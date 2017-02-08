@@ -1,10 +1,37 @@
 body {
   background-color: white;
 }
-.topic_container  {
+.container  {
   width: 100%;
-  height: 100px;
+  text-align:justify
 }
+
+.header_table {
+  text-align: center;
+  width: 100%
+}
+
+.header_table td {
+  width: 33%;
+
+}
+
+.border {
+  width: 100%;
+  height: 10px;
+  background-color: #c0c0c0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#welcome {
+    font-size: 24px;
+}
+
+#contribute {
+    font-size: 20px;
+}
+
 .lifecycle_cont,  .standalone_cont {
 
   display:inline-block;
@@ -51,4 +78,13 @@ body {
 
 .td_lc_desc {
   font-size: 16px;
+}
+
+.portrat img {
+  width: auto;
+  height: 100%;
+}
+.landscape img {
+  width: 100%;
+  height: auto;
 }
