@@ -1,0 +1,54 @@
+body {
+  background-color: white;
+}
+.topic_container  {
+  width: 100%;
+  height: 100px;
+}
+.lifecycle_cont,  .standalone_cont {
+
+  display:inline-block;
+  height: 100%;
+  background-color: #c0c0c0;
+}
+.lifecycle_cont {
+  width: 59%;
+}
+.standalone_cont {
+  float: right;
+  width: 39%;
+}
+
+.title, .table-div {
+  background-color: white;
+
+}
+
+.title {
+  margin: 0 0 5px 0;
+}
+
+.title table {
+  text-align: center;
+  font-size: 32px;
+}
+
+.table-div {
+  margin-bottom: 2px;
+  padding: 3px;
+
+}
+
+.td_sa {
+  text-align: center;
+  padding: 4px;
+  font-size: 24px;
+}
+
+.td_lc_titl {
+  font-size: 20px;
+}
+
+.td_lc_desc {
+  font-size: 16px;
+}

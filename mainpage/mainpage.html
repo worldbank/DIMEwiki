@@ -1,0 +1,76 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="mainpageStyles.css">
+</head>
+<body>
+  <script src="mainpageJScript.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    lifeCycleTopics = [
+      ['Image file', '[[Impact Evaluation Design]]',
+        'A brief introduction to the regression models commonly used in Impact Evaluation. Links to in details resources.'
+      ],['Image file','[[Sampling & Power Calculations]]',
+        'A brief introduction to the regression models commonly used in Impact Evaluation. Links to in details resources.'
+      ],['Image file','[[Human Subjects Approval]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Preparing for Data Collection]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Survey Firm Procurement]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Questionnaire Design]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Questionnaire Translation]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Questionnaire Programming]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Survey Pilot]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Enumerator Training]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Monitoring Data Quality]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Data Management]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Data Cleaning]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Data Analysis]]',
+        'This topic discuss all ethical concerns important for the '
+      ],['Image file','[[Reproducible Research]]',
+        'This topic discuss all ethical concerns important for the '
+      ]
+    ]
+    standAloneTopics = [
+      '[[Stata Coding Practices]]','[[Stata Coding Practices]]','[[SCTO Coding Practices|SurveyCTO Coding Practices]]','[[Geo Spatial Data]]','[[Check Lists for Field Coordinators]]','[[i2i Trust Fund for Impact Evaluation]]','[[Impact Evaluation Team]]','[[Cost-effectiveness Analysis]]'
+    ]
+  </script>
+
+  <div class="topics_cont">
+    <div class="lifecycle_cont">
+      <div class="title">
+        <table style="width:100%">
+          <tr><td>Impact Evaluation Life Cycle Topics</tr></td>
+        </table>
+      </div>
+      <script type="text/javascript">
+        for ( j = 0 ; j < lifeCycleTopics.length ; ++j )
+        {
+          document.write(dispTopics_lc(lifeCycleTopics[j]));
+        }
+      </script>
+    </div>
+    <div class="standalone_cont">
+      <div class="title">
+        <table style="width:100%">
+          <tr><td>Stand Alone Topics</tr></td>
+        </table>
+      </div>
+      <script type="text/javascript">
+
+        standAloneTopics.sort(function(a, b){return 0.5 - Math.random()});
+
+        for ( j = 0 ; j < standAloneTopics.length ; ++j )
+        {
+          document.write(dispTopics_sa(standAloneTopics[j]));
+        }
+      </script>
+    </div>
+  </div>
+</body>
