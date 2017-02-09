@@ -1,0 +1,142 @@
+/* CSS placed here will be applied to all skins */
+
+/* Styling required for main page */
+
+.container  {
+  width: 100%;
+  text-align:justify
+}
+
+.header_table {
+  text-align: center;
+  width: 100%
+}
+
+.header_table td {
+  width: 33%;
+
+}
+
+.border {
+  width: 100%;
+  height: 10px;
+  background-color: #c0c0c0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#welcome {
+    font-size: 24px;
+}
+
+#contribute {
+    font-size: 20px;
+}
+
+.lifecycle_cont,  .standalone_cont {
+
+  display:inline-block;
+
+  background-color: #c0c0c0;
+}
+.lifecycle_cont {
+  width: 59%;
+}
+.standalone_cont {
+  float: right;
+  width: 39%;
+}
+
+.title, .table-div {
+  background-color: white;
+
+}
+
+.title {
+  margin: 0 0 5px 0;
+}
+
+.title table {
+  text-align: center;
+  font-size: 32px;
+}
+
+.table-div {
+  margin-bottom: 2px;
+  padding: 3px;
+
+}
+.table-div td {
+  border-bottom: 2px solid #c0c0c0;
+}
+
+.table-div td.td_lc_titl {
+  border-bottom: none;
+}
+.td_sa {
+  text-align: center;
+  padding: 4px;
+  font-size: 24px;
+}
+
+.td_lc_titl {
+  font-size: 20px;
+}
+
+.td_lc_desc {
+  font-size: 16px;
+}
+
+.portrat img {
+  width: auto;
+  height: 100%;
+}
+.landscape img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling required for checklists */
+
+.chk_table {
+
+  width: 100%;
+
+}
+.chk_table td, .chk_table th {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.chk_table th {
+  height: 40px;
+}
+
+.chk_table td {
+  text-align: center;
+}
+.chk_table .chk_item {
+  text-align: left;
+}
+.chk_table .chk_row1 {
+  background-color: #b7babf;
+  font-weight: bold;
+  font-size: 20px;
+}
+.chk_table .chk_row2 {
+  font-size: 16px;
+}
+.chk_table .chk_row3 {
+  font-size: 14px;
+}
+.chk_table .chk_row4 {
+  font-size: 14px;
+}
+.chk_table .chk_row5 {
+  font-size: 14px;
+}
+
+.chk_table .chk_number {
+  text-align: left;
+  margin-left: 1px;
+}
