@@ -1,44 +1,42 @@
-table {
+.chk_table {
 
   width: 100%;
 
 }
-td, th {
+.chk_table td, .chk_table th {
   border-style: solid;
   border-width: 1px;
 }
 
-th {
+.chk_table th {
   height: 40px;
 }
 
-td {
+.chk_table td {
   text-align: center;
 }
-.chk_item {
+.chk_table .chk_item {
   text-align: left;
 }
-.chk_row1 {
+.chk_table .chk_row1 {
   background-color: #b7babf;
   font-weight: bold;
   font-size: 20px;
 }
-.chk_row2 {
+.chk_table .chk_row2 {
   font-size: 16px;
 }
-.chk_row3 {
+.chk_table .chk_row3 {
   font-size: 14px;
 }
-.chk_row4 {
+.chk_table .chk_row4 {
   font-size: 14px;
 }
-.chk_row5 {
+.chk_table .chk_row5 {
   font-size: 14px;
 }
 
-
-
-.chk_number {
+.chk_table .chk_number {
   text-align: left;
   margin-left: 1px;
 }
