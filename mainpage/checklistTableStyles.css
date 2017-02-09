@@ -1,0 +1,44 @@
+table {
+
+  width: 100%;
+
+}
+td, th {
+  border-style: solid;
+  border-width: 1px;
+}
+
+th {
+  height: 40px;
+}
+
+td {
+  text-align: center;
+}
+.chk_item {
+  text-align: left;
+}
+.chk_row1 {
+  background-color: #b7babf;
+  font-weight: bold;
+  font-size: 20px;
+}
+.chk_row2 {
+  font-size: 16px;
+}
+.chk_row3 {
+  font-size: 14px;
+}
+.chk_row4 {
+  font-size: 14px;
+}
+.chk_row5 {
+  font-size: 14px;
+}
+
+
+
+.chk_number {
+  text-align: left;
+  margin-left: 1px;
+}

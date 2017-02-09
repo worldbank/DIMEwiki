@@ -1,0 +1,36 @@
+<header>
+  <link rel="stylesheet" type="text/css" href="checklistTableStyles.css">
+  <script src="checklistTableJScript.js" type="text/javascript"></script>
+</header>
+<body>
+
+  <div>
+    <script type="text/javascript">
+
+    var checklist =
+    [
+      [1,'Pre-Pilot'],
+        [2,'Do you have a set protocol for identifying participants in focus group discussions?'],
+        [2,'Do you have a form prepared for interviewers to record qualitative observations and notes from discussion?'],
+      [1,'Content-focused Pilot'],
+        [2,'Is the questionnaire you are piloting fully translated into the local language?'],
+        [2,'Is the instrument formatted for printing? Make sure there are sufficient margins on all pages for taking notes.'],
+        [2,'Did you print enough copies of the instrument for all interviewers and all people accompanying interviews to have a copy for each planned interview?'],
+        [2,'Does the survey instrument include both the research team language and local language (where different)? If not, remember to print out copies in each language as applicable.'],
+        [2,'Do you have access to a printer to print revisions in real time if significant changes are needed?'],
+        [2,'Have you instructed interviewers (or observers) to record the start and end time for each module?'],
+      [1,'Data-focused Pilot'],
+        [2,'Have you office-tested the final version of the programmed instrument for any bugs, and to ensure that all questions appear as expected and reflect the final translation?'],
+        [2,'Have you set up a SurveyCTO server for the pilot? (For DIME members: Remember, no data can be uploaded to the DIME Test server.)'],
+          [3,'Is the name for the pilot form on the server clearly distinguishable from the final survey?'],
+          [3, 'Have you assigned a form id unique to the pilot? (to avoid confusing pilot data with final data)']
+    ];
+
+
+    console.log(checklist);
+
+    document.write(checklistTable(checklist));
+
+    </script>
+  </div>
+</body>
