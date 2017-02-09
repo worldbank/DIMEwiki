@@ -65,7 +65,13 @@ body {
   padding: 3px;
 
 }
+.table-div td {
+  border-bottom: 2px solid #c0c0c0;
+}
 
+.table-div td.td_lc_titl {
+  border-bottom: none;
+}
 .td_sa {
   text-align: center;
   padding: 4px;
