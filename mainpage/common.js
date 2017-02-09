@@ -2,7 +2,7 @@
 
   lifeCycleTopics = [
      ['Image file','Impact Evaluation Design', 'A brief introduction to common IE methods, concept note, monitoring compliance and impact evaluation manual. The page also has links to sample IE concept note, protocol for monitoring compliance and impact evaluation manual.'],
-     ['Image file','Sampling & Power Calculations','This page discusses how to create a statistically valid sample representative of the population of interest for impact evaluation.'],
+     ['<img alt="Sample_Size_Formula.png" src="/wiki/File:Sample_Size_Formula.png" class="image">','Sampling & Power Calculations','This page discusses how to create a statistically valid sample representative of the population of interest for impact evaluation.'],
      ['Image file','Human Subjects Approval','Fill this in by edit the page MediaWiki:Common.js'],
      ['Image file','Preparing for Data Collection','Fill this in by edit the page MediaWiki:Common.js'],
      ['Image file','Survey Firm Procurement','Fill this in by edit the page MediaWiki:Common.js'],
@@ -41,14 +41,14 @@
         [2,'Do you have a form prepared for interviewers to record qualitative observations and notes from discussion?'],
         [2,'Have you tested interviewers’ note-taking abilities during the training and provided feedback on content and handwriting?'],
         [2,'If you do not speak the local language(s), do you have a tried-and-true research assistant to accompany you to translate?'],
-      [1,'Content-focused Pilot'],
+      [1,'Content-Focused Pilot'],
         [2,'Is the questionnaire you are piloting fully translated into the local language?'],
         [2,'Is the instrument formatted for printing? Make sure there are sufficient margins on all pages for taking notes.'],
         [2,'Did you print enough copies of the instrument for all interviewers and all people accompanying interviews to have a copy for each planned interview?'],
         [2,'Does the survey instrument include both the research team language and local language (where different)? If not, remember to print out copies in each language as applicable.'],
         [2,'Do you have access to a printer to print revisions in real time if significant changes are needed?'],
         [2,'Have you instructed interviewers (or observers) to record the start and end time for each module?'],
-      [1,'Data-focused Pilot'],
+      [1,'Data-Focused Pilot'],
         [2,'Have you office-tested the final version of the programmed instrument for any bugs, and to ensure that all questions appear as expected and reflect the final translation?'],
         [2,'Have you set up a SurveyCTO server for the pilot? (For DIME members: Remember, no data can be uploaded to the DIME Test server.)'],
           [3,'Is the name for the pilot form on the server clearly distinguishable from the final survey?'],
@@ -175,10 +175,11 @@ $(function () {
 function checklistTable(chkarray) {
 
   var tableString = '<table class="chk_table">';
-  tableString += '<tr><th colspan="4">Project name: _______________________________________________</th>';
-  tableString += '<tr><th colspan="4">Country: _______________________________________________</th>';
-  tableString += '<tr><th colspan="4">District: _______________________________________________</th>';
-  tableString += '<tr><td></td><td>Initials</td><td>Number</td><td>Checklist Item</td></tr>';
+  tableString += '<tr><th rowspan="4" colspan="3">DIME Image (Coming)</th>';
+  tableString += '<tr><th>Project name: _______________________________________________</th>';
+  tableString += '<tr><th>Country: _______________________________________________</th>';
+  tableString += '<tr><th>District: _______________________________________________</th>';
+  tableString += '<tr><td></td><td>Initials</td><td>#No</td><td>Checklist Item</td></tr>';
 
   var levelTracker = [0]
 

@@ -119,21 +119,29 @@
   text-align: left;
 }
 .chk_table .chk_row1 {
-  background-color: #b7babf;
+  background-color: grey;
   font-weight: bold;
   font-size: 20px;
+  height: 40px;
 }
 .chk_table .chk_row2 {
-  font-size: 16px;
+  font-size: 14px;
+  padding-left: 5px;
 }
+
 .chk_table .chk_row3 {
   font-size: 14px;
 }
-.chk_table .chk_row4 {
-  font-size: 14px;
+.chk_table .chk_row4, .chk_table .chk_row5  {
+  font-size: 12px;
 }
-.chk_table .chk_row5 {
-  font-size: 14px;
+
+.chk_table .chk_row3 .chk_item {
+  padding-left: 40px;
+}
+
+.chk_table .chk_row4 .chk_item {
+  padding-left: 60px;
 }
 
 .chk_table .chk_number {
