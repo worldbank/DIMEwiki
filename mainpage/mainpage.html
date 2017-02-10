@@ -3,38 +3,42 @@
 </head>
 <body>
 
-    <div class="mp_cont">
+  <!-- Headher with welcome and contribute -->
+  <div class="mp_cont">
+    <table class="header_table">
+      <tr>
+        <td id="welcome">Welcome to the DIME Wiki!<br><br><a href="https://dimewiki.worldbank.org/wiki/New_Users">Create a New Account</a></td>
+        <td id="contribute">Everyone is encouraged to contribute to this Wiki.<br><a href="https://dimewiki.worldbank.org/wiki/DIME_Wiki_Contributions">How to contribute</a>
+        </td>
+        <td><img alt="DIME Image" src="https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG"></td>
+      </tr>
+    </table>
 
-      <table class="header_table">
-        <tr>
-          <td id="welcome">Welcome to the DIME Wiki!<br><br><a href="https://dimewiki.worldbank.org/wiki/New_Users">Create a New Account</a></td>
-          <td id="contribute">Everyone is encouraged to contribute to this Wiki.<br><a href="https://dimewiki.worldbank.org/wiki/DIME_Wiki_Contributions">How to contribute</a>
-          </td>
-          <td><img alt="DIME Image" src="https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG" ></td>
-        </tr>
-      </table>
+  </div>
 
-    </div>
+  <!-- Border between header and topic lists -->
+  <div class="border"></div>
 
-   <div class="border"></div>
-
-    <div class="mp_cont">
-      <div class="lifecycle_cont">
+  <!-- topic lists -->
+  <div class="mp_cont">
+    <table class="topic-column-table" ><col width="65%"><col width="35%"><tr>
+      <td>
         <div class="title">
           <table style="width:100%">
             <tr><td>Impact Evaluation Life Cycle Topics</tr></td>
           </table>
         </div>
-        <div id="dimewiki-mainpage-lc-js">Hey</div>
-      </div>
-      <div class="standalone_cont">
+        <div id="dimewiki-mainpage-lc-js">Life Cycle Topics not loading properly</div>
+
+      </td><td>
         <div class="title">
           <table style="width:100%">
             <tr><td>Stand Alone Topics</tr></td>
           </table>
         </div>
-       <div id="dimewiki-mainpage-sa-js">You</div>
-      </div>
-    </div>
+       <div id="dimewiki-mainpage-sa-js">Stand Alone Topics not loading properly</div>
+      </td>
+    </tr></table>
+  </div>
 <script src="common.js" type="text/javascript"></script>
 </body>

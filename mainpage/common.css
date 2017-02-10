@@ -2,15 +2,6 @@
 
 /* Styling required for main page */
 
-/*
-
-  color  #36c;
-      font-weight: 700;
-          font-family: sans-serif;
-
-*/
-
-
 .mp_cont  {
   width: 100%;
   text-align:justify;
@@ -51,19 +42,8 @@
     font-size: 20px;
 }
 
-.lifecycle_cont,  .standalone_cont {
-
-  display:inline-block;
-  background-color: #c0c0c0;
-}
-.lifecycle_cont {
-  width: 59%;
-  margin-left: 5px;
-}
-.standalone_cont {
-  float: right;
-  width: 39%;
-  margin-right: 5px;
+.topic-column-table td {
+  vertical-align:top;
 }
 
 .title, .table-div {
@@ -78,6 +58,10 @@
 .title table {
   text-align: center;
   font-size: 32px;
+}
+
+.title tr {
+  height: 40px;
 }
 
 .dw-mp-topicimg {

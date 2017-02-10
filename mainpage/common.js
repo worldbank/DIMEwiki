@@ -179,14 +179,20 @@
 
 function checklistTable(chkarray) {
 
+  //Write the header of each checklit
   var tableString = '<table class="chk_table">';
   tableString += '<tr><th rowspan="5" colspan="3"><img alt="DIME Image" src="https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG" class="chk_logo_img"></th>';
   tableString += '<tr><th>Project name: _______________________________________________</th>';
   tableString += '<tr><th>Country: _______________________________________________</th>';
   tableString += '<tr><th>District: _______________________________________________</th>';
-tableString += '<tr><th>Year, Month and/or Day:  ____________________________</th>';
+  tableString += '<tr><th>Year, Month and/or Day:  ____________________________</th>';
 
-var levelTracker = [0]
+  /*
+    Write all checklist items
+  */
+
+
+  var levelTracker = [0]
 
   for ( row = 0 ; row < chkarray.length ; ++row ) {
     var thisLevel =chkarray[row][0];
