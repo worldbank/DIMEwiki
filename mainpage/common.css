@@ -13,7 +13,7 @@
   text-align: center;
   width: 100%;
   border-collapse: separate;
-  border-spacing: 100px 20px;
+  border-spacing: 75px 20px;
 }
 
 .header_table td {
@@ -27,13 +27,6 @@
 
 }
 
-.border {
-  width: 100%;
-  height: 15px;
-  background-color: white;
-
-}
-
 .mp_cont #welcome {
     font-size: 24px;
 }
@@ -42,16 +35,21 @@
     font-size: 20px;
 }
 
-.topic-column-table td {
-  vertical-align:top;
+.border {
+  width: 100%;
+  height: 15px;
+  background-color: white;
+
 }
 
 .topic-column-table .lc-column {
   width: 65%;
+  vertical-align:top;
 }
 
 .topic-column-table .sa-column {
   width: 35%;
+  vertical-align:top;
 }
 
 .title-table {
@@ -60,6 +58,7 @@
   font-size: 32px;
   height: 40px;
   width: 100%;
+  vertical-align:center;
 }
 
 .title-table, .table-div {
