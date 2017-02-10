@@ -27,12 +27,27 @@
 
 }
 
-.mp_cont #welcome {
-    font-size: 24px;
-}
+.sa-column {
 
-.mp_cont #contribute {
-    font-size: 20px;
+  padding-bottom: 0px;
+
+}
+.sa-column .right-column {
+  width: 100%;
+}
+.sa-column .right-td {
+
+  text-align: center;
+  height: 100px;
+  font-size: 24px;
+  border-top:  10px solid #c0c0c0;
+}
+.sa-column  .right-td, #dimewiki-mainpage-sa-js  {
+  vertical-align:center;
+  display: block;
+}
+#dimewiki-mainpage-sa-js {
+  margin-bottom: 40px;
 }
 
 .border {
@@ -103,7 +118,7 @@
   font-size: 20px;
 }
 
-.td_lc_titl a, .td_sa a, .header_table a {
+.td_lc_titl a, .td_sa a, .right-td a {
   color:  #36c;
   font-weight: 700;
   text-decoration:none;
