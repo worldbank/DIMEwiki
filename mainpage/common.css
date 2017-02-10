@@ -2,49 +2,68 @@
 
 /* Styling required for main page */
 
-.cont  {
+/*
+
+  color  #36c;
+      font-weight: 700;
+          font-family: sans-serif;
+
+*/
+
+
+.mp_cont  {
   width: 100%;
-  text-align:justify
+  text-align:justify;
+  background-color:  #c0c0c0;
+  font-family: sans-serif;
 }
 
 .header_table {
   text-align: center;
-  width: 100%
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 100px 20px;
 }
 
 .header_table td {
   width: 33%;
+  background-color:  white;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+
 
 }
 
 .border {
   width: 100%;
-  height: 10px;
-  background-color: #c0c0c0;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  height: 15px;
+  background-color: white;
+
 }
 
-#welcome {
+.mp_cont #welcome {
     font-size: 24px;
 }
 
-#contribute {
+.mp_cont #contribute {
     font-size: 20px;
 }
 
 .lifecycle_cont,  .standalone_cont {
 
   display:inline-block;
-
   background-color: #c0c0c0;
 }
 .lifecycle_cont {
   width: 59%;
+  margin-left: 5px;
 }
 .standalone_cont {
   float: right;
   width: 39%;
+  margin-right: 5px;
 }
 
 .title, .table-div {
@@ -53,7 +72,7 @@
 }
 
 .title {
-  margin: 0 0 5px 0;
+  margin: 10px 0 10px 0;
 }
 
 .title table {
@@ -88,6 +107,13 @@
 
 .td_lc_titl {
   font-size: 20px;
+}
+
+.td_lc_titl a, .td_sa a, .header_table a {
+  color:  #36c;
+  font-weight: 700;
+  text-decoration:none;
+
 }
 
 .td_lc_desc {
