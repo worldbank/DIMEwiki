@@ -109,7 +109,7 @@
         [2,'How is the flow of the interview?'],
           [3,'Any pauses? (likely areas where interviewers need more instructions)'],
           [3,'Are there times when the respondent looks bored? Uncomfortable? Losing interest?'],
-        [2,'Could the order of modules be improved? The order of questions within modules?'],
+        [2,'Could the order of modules be improved? The order of questions within modules?'],
         [2,'How long does the interview take?'],
           [3,'Check length of each module by noting start and stop time.'],
           [3,'Expect that pilot interviews will take much longer than actual interviews (likely twice as long) – interviewers are expected to do extra probing, take qualitative notes, and record open-ended responses, and the survey instrument may not yet flow well'],
@@ -138,13 +138,13 @@
 $(function () {
 
 /*nothing is done with this array yet*/
-  elements = [
+  /*elements = [
     ['dimewiki-mainpage-lc-js'  ,dispTopics_lc  ,lifeCycleTopics],
     ['dimewiki-mainpage-sa-js'  ,dispTopics_sa  ,standAloneTopics],
     ['dimewiki-chk-surveyprep'  ,checklistTable ,chk_surveyprep],
     ['dimewiki-chk-questcont'   ,checklistTable ,questionnaire_chk_content],
     ['dimewiki-chk-questdata'   ,checklistTable ,questionnaire_chk_data]
-  ]
+  ]*/
 
 
   /*console.log(Questionnaire_chk_Content);*/
@@ -175,12 +175,13 @@ $(function () {
 function checklistTable(chkarray) {
 
   var tableString = '<table class="chk_table">';
-  tableString += '<tr><th rowspan="4" colspan="3"><img alt="DIME Image" src="https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG" class="chk_logo_img"></th>';
+  tableString += '<tr><th rowspan="5" colspan="3"><img alt="DIME Image" src="https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG" class="chk_logo_img"></th>';
   tableString += '<tr><th>Project name: _______________________________________________</th>';
   tableString += '<tr><th>Country: _______________________________________________</th>';
   tableString += '<tr><th>District: _______________________________________________</th>';
+tableString += '<tr><th>Year: ______ Date: _______</th>';
 
-  var levelTracker = [0]
+var levelTracker = [0]
 
   for ( row = 0 ; row < chkarray.length ; ++row ) {
     var thisLevel =chkarray[row][0];
