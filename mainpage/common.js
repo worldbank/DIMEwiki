@@ -2,7 +2,7 @@
 
   lifeCycleTopics = [
      ['Image file','Impact Evaluation Design', 'A brief introduction to common IE methods, concept note, monitoring compliance and impact evaluation manual. The page also has links to sample IE concept note, protocol for monitoring compliance and impact evaluation manual.'],
-     ['<img alt="Sample_Size_Formula.png" src="/wiki/File:Sample_Size_Formula.png" class="image">','Sampling & Power Calculations','This page discusses how to create a statistically valid sample representative of the population of interest for impact evaluation.'],
+     ['https://dimewiki.worldbank.org/images/3/3c/Sample_Size_Formula.png','Sampling & Power Calculations','This page discusses how to create a statistically valid sample representative of the population of interest for impact evaluation.'],
      ['Image file','Human Subjects Approval','Fill this in by edit the page MediaWiki:Common.js'],
      ['Image file','Preparing for Data Collection','Fill this in by edit the page MediaWiki:Common.js'],
      ['Image file','Survey Firm Procurement','Fill this in by edit the page MediaWiki:Common.js'],
@@ -175,11 +175,10 @@ $(function () {
 function checklistTable(chkarray) {
 
   var tableString = '<table class="chk_table">';
-  tableString += '<tr><th rowspan="4" colspan="3">DIME Image (Coming)</th>';
+  tableString += '<tr><th rowspan="4" colspan="3"><img alt="DIME Image" src="https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG" class="chk_logo_img"></th>';
   tableString += '<tr><th>Project name: _______________________________________________</th>';
   tableString += '<tr><th>Country: _______________________________________________</th>';
   tableString += '<tr><th>District: _______________________________________________</th>';
-  tableString += '<tr><td></td><td>Initials</td><td>#No</td><td>Checklist Item</td></tr>';
 
   var levelTracker = [0]
 
@@ -215,27 +214,36 @@ function checklistRow(thisLevel, thisItem, number)
 
   var  tableString = '';
 
-  var checkbox = (thisLevel == 1  ? '' : '[ __ ]')
+  if (thisLevel == 1) {
+      tableString += '<tr class="chk_row1"><td colspan="4">'+ number +'. '+ thisItem +'</td></tr>';
+      tableString += '<tr><td></td><td>Initials</td><td>#No</td><td>Checklist Item</td></tr>';
+      return tableString
 
-  switch (thisLevel) {
-      case 1:
-          tr_class = 'class="chk_row1"';
-          break;
-      case 2:
-          tr_class = 'class="chk_row2"';
-          break;
-      case 3:
-          tr_class = 'class="chk_row3"';
-          break;
-      case 4:
-          tr_class = 'class="chk_row4"';
-          break;
-      default:
-        /*implicitly 5 or above*/
-          tr_class = 'class="chk_row5"';
+  } else {
+
+    switch (thisLevel) {
+        case 2:
+            tr_class = 'class="chk_row2"';
+            break;
+        case 3:
+            tr_class = 'class="chk_row3"';
+            break;
+        case 4:
+            tr_class = 'class="chk_row4"';
+            break;
+        default:
+          /*implicitly 5 or above*/
+            tr_class = 'class="chk_row5"';
+    }
+
+    tableString += '<tr '+tr_class+'><td nowrap>[ __ ]</td><td></td><td nowrap class="chk_number">'+ number +'</td><td class="chk_item">'+ thisItem +'</td></tr>';
+    
+    return tableString
   }
 
-  return '<tr '+tr_class+'><td nowrap>'+checkbox+'</td><td></td><td nowrap class="chk_number">'+ number +'</td><td class="chk_item">'+ thisItem +'</td></tr>';
+
+
+
 
 }
 
@@ -251,7 +259,7 @@ function dispTopics_lc(topicArray)
 
     for ( topic = 0 ; topic < topicArray.length ; ++topic ) {
 
-      topicTable += '<td rowspan="2">'+ topicArray[topic][0] +'</td>';
+      topicTable += '<td rowspan="2"><a href="/wiki/'+ topicArray[topic][1] +'"><img alt="'+ topicArray[topic][1] +' Image" src="'+ topicArray[topic][0] +'" class="dw-mp-topicimg"></td>';
       topicTable += '<td class="td_lc_titl"><a href="/wiki/'+ topicArray[topic][1] +'">'+ topicArray[topic][1] +'</a></td>';
       topicTable += '</tr><tr>';
       topicTable += '<td class="td_lc_desc">'+ topicArray[topic][2] +'</td></tr>';

@@ -61,6 +61,13 @@
   font-size: 32px;
 }
 
+.dw-mp-topicimg {
+
+  width: 200px;
+  height: auto;
+
+}
+
 .table-div {
   margin-bottom: 2px;
   padding: 3px;
@@ -103,6 +110,12 @@
   width: 100%;
 
 }
+
+.chk_logo_img {
+  width: 150px;
+  height: auto;
+}
+
 .chk_table td, .chk_table th {
   border-style: solid;
   border-width: 1px;
@@ -120,10 +133,15 @@
 }
 .chk_table .chk_row1 {
   background-color: grey;
-  font-weight: bold;
-  font-size: 20px;
   height: 40px;
 }
+.chk_table .chk_row1 td {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
 .chk_table .chk_row2 {
   font-size: 14px;
   padding-left: 5px;
