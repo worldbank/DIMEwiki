@@ -1,21 +1,21 @@
 /* Arrays with data needed for the main page */
 
   lifeCycleTopics = [
-     ['Image file','Impact Evaluation Design', 'A brief introduction to common IE methods, concept note, monitoring compliance and impact evaluation manual. The page also has links to sample IE concept note, protocol for monitoring compliance and impact evaluation manual.'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Impact Evaluation Design', 'A brief introduction to common IE methods, concept note, monitoring compliance and impact evaluation manual. The page also has links to sample IE concept note, protocol for monitoring compliance and impact evaluation manual.'],
      ['https://dimewiki.worldbank.org/images/3/3c/Sample_Size_Formula.png','Sampling & Power Calculations','This page discusses how to create a statistically valid sample representative of the population of interest for impact evaluation.'],
-     ['Image file','Human Subjects Approval','Fill this in by edit the page MediaWiki:Common.js'],
-     ['Image file','Preparing for Data Collection','Fill this in by edit the page MediaWiki:Common.js'],
-     ['Image file','Survey Firm Procurement','Fill this in by edit the page MediaWiki:Common.js'],
-     ['Image file','Questionnaire Design','Fill this in by edit the page MediaWiki:Common.js'],
-     ['Image file','Questionnaire Translation','Fill this in by edit the page MediaWiki:Common.js'],
-     ['Image file','Questionnaire Programming','This topic discusses how to take the questionnaire you developed during Questionnaire Design and make it a digital CAPI questionnaire. It discusses how to plan that work and best practices to remember to make the work flow as easy as possible for the enumerator as well as reducing the risk for lost or corrupted data.'],
-     ['Image file','Survey Pilot','This page discusses what a survey pilot is, and also discusses the stages, timeline, people involved, and the structure of a survey pilot.'],
-     ['Image file','Enumerator Training','This page highlights the best practices to follow during enumerator training and the development of enumerator manual.'],
-     ['Image file','Monitoring Data Quality','This page discusses ways in which survey data can be monitored for quality. The page also includes practical tips on data quality management and tips on how to conduct duplicate and survey log checks, high frequency checks, and back checks.'],
-     ['Image file','Data Management','Fill this in by edit the page MediaWiki:Common.js'],
-     ['Image file','Data Cleaning','Fill this in by edit the page MediaWiki:Common.js'],
-     ['Image file','Data Analysis','Fill this in by edit the page MediaWiki:Common.js'],
-     ['Image file','Reproducible Research','Fill this in by edit the page MediaWiki:Common.js']
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Human Subjects Approval','Fill this in by edit the page MediaWiki:Common.js'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Preparing for Data Collection','Fill this in by edit the page MediaWiki:Common.js'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Survey Firm Procurement','Fill this in by edit the page MediaWiki:Common.js'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Questionnaire Design','Fill this in by edit the page MediaWiki:Common.js'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Questionnaire Translation','Fill this in by edit the page MediaWiki:Common.js'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Questionnaire Programming','This topic discusses how to take the questionnaire you developed during Questionnaire Design and make it a digital CAPI questionnaire. It discusses how to plan that work and best practices to remember to make the work flow as easy as possible for the enumerator as well as reducing the risk for lost or corrupted data.'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Survey Pilot','This page discusses what a survey pilot is, and also discusses the stages, timeline, people involved, and the structure of a survey pilot.'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Enumerator Training','This page highlights the best practices to follow during enumerator training and the development of enumerator manual.'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Monitoring Data Quality','This page discusses ways in which survey data can be monitored for quality. The page also includes practical tips on data quality management and tips on how to conduct duplicate and survey log checks, high frequency checks, and back checks.'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Data Management','Fill this in by edit the page MediaWiki:Common.js'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Data Cleaning','Fill this in by edit the page MediaWiki:Common.js'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Data Analysis','Fill this in by edit the page MediaWiki:Common.js'],
+     ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Reproducible Research','Fill this in by edit the page MediaWiki:Common.js']
    ];
 
    standAloneTopics = [
@@ -237,7 +237,7 @@ function checklistRow(thisLevel, thisItem, number)
     }
 
     tableString += '<tr '+tr_class+'><td nowrap>[ __ ]</td><td></td><td nowrap class="chk_number">'+ number +'</td><td class="chk_item">'+ thisItem +'</td></tr>';
-    
+
     return tableString
   }
 
