@@ -91,7 +91,7 @@
         [2,'How long does the interview take?'],
           [3,'Check length of each module by noting start and stop time.'],
           [3,'Expect that pilot interviews will take much longer than actual interviews (likely twice as long) – interviewers are expected to do extra probing, take qualitative notes, and record open-ended responses, and the survey instrument may not yet flow well']
-      ]
+      ];
 
     questionnaire_chk_data = [
       [1,'Pre-pilot'],
@@ -109,7 +109,7 @@
         [2,'How is the flow of the interview?'],
           [3,'Any pauses? (likely areas where interviewers need more instructions)'],
           [3,'Are there times when the respondent looks bored? Uncomfortable? Losing interest?'],
-        [2,'Could the order of modules be improved? The order of questions within modules?'],
+        [2,'Could the order of modules be improved? The order of questions within modules?'],
         [2,'How long does the interview take?'],
           [3,'Check length of each module by noting start and stop time.'],
           [3,'Expect that pilot interviews will take much longer than actual interviews (likely twice as long) – interviewers are expected to do extra probing, take qualitative notes, and record open-ended responses, and the survey instrument may not yet flow well'],
@@ -132,10 +132,10 @@
         [2,'Use the dataset to program a do-file for high-frequency checks (see DIME template for example)'],
         [2,'Run the high-frequency do-file and de-bug as needed'],
         [2,'Export results of checks, and discuss and agree with the survey firm on a final format for communicating and resolving issues discovered in the checks']
-    ]
+    ];
 
 /* Functions creating divs ready to be loaded at the wiki */
-$(function () {
+/*$(function () {*/
 
 /*nothing is done with this array yet*/
   /*elements = [
@@ -147,27 +147,32 @@ $(function () {
   ]*/
 
 
-  /*console.log(Questionnaire_chk_Content);*/
+  //console.log('Yes Man');
 
   if (document.getElementById("dimewiki-mainpage-lc-js") != null ) {
+    //console.log(lifeCycleTopics);
     document.getElementById('dimewiki-mainpage-lc-js').innerHTML = dispTopics_lc(lifeCycleTopics);
   }
   if (document.getElementById("dimewiki-mainpage-sa-js") != null ) {
+    //console.log(standAloneTopics);
     document.getElementById('dimewiki-mainpage-sa-js').innerHTML = dispTopics_sa(standAloneTopics);
   }
   if (document.getElementById("dimewiki-chk-surveyprep") != null ) {
+    //console.log(chk_surveyprep);
     document.getElementById('dimewiki-chk-surveyprep').innerHTML = checklistTable(chk_surveyprep);
   }
   if (document.getElementById("dimewiki-chk-questcont") != null ) {
+    //console.log(questionnaire_chk_content);
     document.getElementById('dimewiki-chk-questcont').innerHTML = checklistTable(questionnaire_chk_content);
   }
   if (document.getElementById("dimewiki-chk-questdata") != null ) {
+    //console.log(questionnaire_chk_data);
     document.getElementById('dimewiki-chk-questdata').innerHTML = checklistTable(questionnaire_chk_data);
   }
 
 
 
-}());
+/*}());*/
 
 
 /* Functions needed for checklists */
@@ -179,7 +184,7 @@ function checklistTable(chkarray) {
   tableString += '<tr><th>Project name: _______________________________________________</th>';
   tableString += '<tr><th>Country: _______________________________________________</th>';
   tableString += '<tr><th>District: _______________________________________________</th>';
-tableString += '<tr><th>Year: ______ Date: _______</th>';
+tableString += '<tr><th>Year, Month and/or Day:  ____________________________</th>';
 
 var levelTracker = [0]
 
