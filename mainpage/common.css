@@ -48,6 +48,196 @@
 }
 
 .topic-column-table .sa-column {
+  width: 25%;
+  vertical-align:top;
+}
+
+.title-table {
+  margin: 10px 0 10px 0;
+  text-align: center;
+  font-size: 28px;
+  font-family: sans-serif;
+  color: #141414;
+  height: 40px;
+  width: 100%;
+  vertical-align:center;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.title-table, .table-div {
+  background-color: white;
+
+}
+
+
+
+.dw-mp-topicimg {
+
+  width: 150px;
+  height: auto;
+
+}
+
+.table-div {
+  margin-bottom: 2px;
+  padding: 3px;
+
+}
+.table-div td {
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.table-div td.td_lc_titl {
+  border-bottom: none;
+}
+.td_sa {
+  text-align: center;
+  padding: 4px;
+  font-size: 20px;
+}
+
+
+.td_lc_titl {
+  font-size: 20px;
+}
+
+.td_lc_titl a, .td_sa a, .header_table a {
+  color:  #36c;
+  font-weight: 700;
+  text-decoration:none;
+
+}
+
+.td_lc_desc {
+  font-size: 16px;
+  font-family: serif;
+}
+
+.portrat img {
+  width: auto;
+  height: 100%;
+}
+.landscape img {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling required for checklists */
+
+.chk_table {
+
+  width: 100%;
+
+}
+
+.chk_logo_img {
+  width: 150px;
+  height: auto;
+}
+
+.chk_table td, .chk_table th {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.chk_table th {
+  height: 40px;
+}
+
+.chk_table td {
+  text-align: center;
+}
+.chk_table .chk_item {
+  text-align: left;
+}
+.chk_table .chk_row1 {
+  background-color: grey;
+  height: 40px;
+}
+.chk_table .chk_row1 td {
+  text-align: left;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+.chk_table .chk_row2 {
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.chk_table .chk_row3 {
+  font-size: 14px;
+}
+.chk_table .chk_row4, .chk_table .chk_row5  {
+  font-size: 12px;
+}
+
+.chk_table .chk_row3 .chk_item {
+  padding-left: 40px;
+}
+
+.chk_table .chk_row4 .chk_item {
+  padding-left: 60px;
+}
+
+.chk_table .chk_number {
+  text-align: left;
+  margin-left: 1px;
+}
+=======
+/* CSS placed here will be applied to all skins */
+
+/* Styling required for main page */
+
+.mp_cont  {
+  width: 100%;
+  text-align:justify;
+  background-color:  #ffffff;
+  font-family: sans-serif;
+}
+
+.header_table {
+  text-align: center;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 75px 20px;
+}
+
+.header_table td {
+  width: 33%;
+  background-color: #ffffff;
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+
+
+}
+
+.mp_cont #welcome {
+    font-size: 24px;
+}
+
+.mp_cont #contribute {
+    font-size: 20px;
+}
+
+.border {
+  width: 100%;
+  height: 15px;
+  background-color: white;
+
+}
+
+.topic-column-table .lc-column {
+  width: 65%;
+  vertical-align:top;
+}
+
+.topic-column-table .sa-column {
   width: 35%;
   vertical-align:top;
 }
