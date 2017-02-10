@@ -5,7 +5,7 @@
 .mp_cont  {
   width: 100%;
   text-align:justify;
-  background-color:  #c0c0c0;
+  background-color:  #ffffff;
   font-family: sans-serif;
 }
 
@@ -18,8 +18,8 @@
 
 .header_table td {
   width: 33%;
-  background-color:  white;
-  border-color: grey;
+  background-color: #ffffff;
+  border-color: lightgrey;
   border-style: solid;
   border-width: 1px;
   padding: 10px;
@@ -55,10 +55,15 @@
 .title-table {
   margin: 10px 0 10px 0;
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
+  font-family: sans-serif;
+  color: #141414;
   height: 40px;
   width: 100%;
   vertical-align:center;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .title-table, .table-div {
@@ -90,7 +95,7 @@
 .td_sa {
   text-align: center;
   padding: 4px;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .td_lc_titl {
