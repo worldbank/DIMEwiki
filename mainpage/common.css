@@ -46,6 +46,14 @@
   vertical-align:top;
 }
 
+.topic-column-table .lc-column {
+  width: 65%;
+}
+
+.topic-column-table .sa-column {
+  width: 35%;
+}
+
 .title, .table-div {
   background-color: white;
 
