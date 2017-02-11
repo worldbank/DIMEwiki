@@ -4,42 +4,42 @@
 <body>
 
 
+  <div class="mp_cont"> <!-- Div for all content -->
+    <table class="topic-column-table" ><tr> <!-- 1R x 2C table that holds the full page -->
 
-  <!-- Border between header and topic lists -->
-  <div class="border"></div>
-
-  <!-- topic lists -->
-  <div class="mp_cont">
-    <table class="topic-column-table" ><tr>
+      <!-- This is the left column with the life cycle topics -->
       <td rowspan="3" class="lc-column">
         <table class="title-table">
           <tr><td>Impact Evaluation Life Cycle Topics</td></tr>
         </table>
-        <div id="dimewiki-mainpage-lc-js">Life Cycle Topics not loading properly</div>
+        <div id="dimewiki-mainpage-lc-js">Life Cycle Topics not loading properly</div><!-- The content of this div is written from common.js -->
       </td>
+
+      <!-- This is the right column with stand alone topics and signup/contribute-->
       <td class="sa-column">
+
+        <!-- This is the stand alone topics -->
         <table class="title-table">
           <tr><td>Stand Alone Topics</td></tr>
         </table>
-        <table class="right-column"><tr>
-          <td id="dimewiki-mainpage-sa-js">Stand Alone Topics not loading properly</td>
-        </tr><tr>
-          <td class="right-td"><a href="https://dimewiki.worldbank.org/wiki/New_Users">Create a New Account</a></td>
-        </tr><tr>
-          <td class="right-td">Everyone is encouraged to contribute to this Wiki.<br><a href="https://dimewiki.worldbank.org/wiki/DIME_Wiki_Contributions">How to contribute</a></td>
-        </tr>
+        <table class="right-column">
+          <tr>
+            <td id="dimewiki-mainpage-sa-js">Stand Alone Topics not loading properly</td><!-- The content of this div is written from common.js -->
+          </tr>
+
+          <!-- This is the create new account cell -->
+          <tr>
+            <td class="right-td"><a href="https://dimewiki.worldbank.org/wiki/New_Users">Create a New Account</a></td>
+          </tr>
+
+          <!-- This is the how to contribute cell -->
+          <tr>
+            <td class="right-td">Everyone is encouraged to contribute to this Wiki.<br><a href="https://dimewiki.worldbank.org/wiki/DIME_Wiki_Contributions">How to contribute</a></td>
+          </tr>
+
+        </table>
       </td>
-      </table>
     </table>
   </div>
 <script src="common.js" type="text/javascript"></script>
 </body>
-
-
-<!-- Headher with welcome and contribute -->
-<div class="mp_cont">
-  <table class="header_table">
-
-  </table>
-
-</div>

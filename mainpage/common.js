@@ -1,5 +1,6 @@
 /* Arrays with data needed for the main page */
 
+  //Image, title and description for life Cycle topics
   lifeCycleTopics = [
      ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Impact Evaluation Design', 'A brief introduction to common IE methods, concept note, monitoring compliance and impact evaluation manual. The page also has links to sample IE concept note, protocol for monitoring compliance and impact evaluation manual.'],
      ['https://dimewiki.worldbank.org/images/3/3c/Sample_Size_Formula.png','Sampling & Power Calculations','This page discusses how to create a statistically valid sample representative of the population of interest for impact evaluation.'],
@@ -18,12 +19,15 @@
      ['https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG','Reproducible Research','This page discusses the importance of reproducible research and the ways in which the Impact Evaluation community can make their research more transparent.']
    ];
 
+   //Title for life Stand Alone
    standAloneTopics = [
      'Stata Coding Practices','SurveyCTO Coding Practices','Geo Spatial Data','Check Lists for Field Coordinators','i2i Trust Fund for Impact Evaluation','Impact Evaluation Team','Cost-effectiveness Analysis'];
+
+   //Ramndomizing the order of the stand along topics
    standAloneTopics.sort(function(a, b){return 0.5 - Math.random()});
 
 
-/* Arrays with data needed for checklists */
+/* Arrays with data needed for the checklists */
 
     chk_surveyprep =
     [
@@ -135,20 +139,12 @@
     ];
 
 /* Functions creating divs ready to be loaded at the wiki */
+
+/* This is the main function that is loaded at each page and calls other functions as needed
+//remove the comment for the row below when copying the code to the wikithe wiki
 /*$(function () {*/
 
-/*nothing is done with this array yet*/
-  /*elements = [
-    ['dimewiki-mainpage-lc-js'  ,dispTopics_lc  ,lifeCycleTopics],
-    ['dimewiki-mainpage-sa-js'  ,dispTopics_sa  ,standAloneTopics],
-    ['dimewiki-chk-surveyprep'  ,checklistTable ,chk_surveyprep],
-    ['dimewiki-chk-questcont'   ,checklistTable ,questionnaire_chk_content],
-    ['dimewiki-chk-questdata'   ,checklistTable ,questionnaire_chk_data]
-  ]*/
-
-
-  //console.log('Yes Man');
-
+  //Check if the page currently being viewed cotainst any of the elements this js file creates. If they existm then call the function that creates them.
   if (document.getElementById("dimewiki-mainpage-lc-js") != null ) {
     //console.log(lifeCycleTopics);
     document.getElementById('dimewiki-mainpage-lc-js').innerHTML = dispTopics_lc(lifeCycleTopics);
@@ -171,7 +167,7 @@
   }
 
 
-
+//comment in this row for it to show on the wiki
 /*}());*/
 
 
@@ -179,7 +175,10 @@
 
 function checklistTable(chkarray) {
 
-  //Write the header of each checklit
+  /**************************
+    Write the header of the check lists
+  */
+
   var tableString = '<table class="chk_table">';
   tableString += '<tr><th rowspan="5" colspan="3"><img alt="DIME Image" src="https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG" class="chk_logo_img"></th>';
   tableString += '<tr><th>Project name: _______________________________________________</th>';
@@ -187,31 +186,51 @@ function checklistTable(chkarray) {
   tableString += '<tr><th>District: _______________________________________________</th>';
   tableString += '<tr><th>Year, Month and/or Day:  ____________________________</th>';
 
-  /*
+  /**************************
     Write all checklist items
   */
 
-
+  //This array keeps track of the numbering
   var levelTracker = [0]
 
+  //Loop over all items in the data array
   for ( row = 0 ; row < chkarray.length ; ++row ) {
-    var thisLevel =chkarray[row][0];
+
+    //What level is this item on. 1 = section header. 2 = highest item level. 3 = first sub-item level etc.
+    var thisLevel = chkarray[row][0];
+
+    //The index in the level tracker array that corresponds to this level
     var thisIndex = thisLevel - 1;
-    var thisItem =chkarray[row][1];
 
+    //Load the item list text
+    var thisItem = chkarray[row][1];
 
-
+    //If the previous item was on a lower sublevel than the current then remove the last element in the array.
+    /*For example:
+      3.2
+      3.2.1 <- previous level
+      3.2   <- this level (will be incremented to 3.3 below)
+    */
     if ( levelTracker.length > thisLevel) {
       levelTracker.splice(thisLevel, levelTracker.length - (thisLevel));
+
+    //If the current level is a new sub level, then add a new element that is 0
+    /*For example:
+      3.1
+      3.2   <- previous level
+      3.2.0 <- this level (will be incremented to 3.2.1 below)
+    */
     } else if ( levelTracker.length < thisLevel) {
       levelTracker.push(0)
     }
 
+    //Increment current level
     ++levelTracker[thisIndex]
 
-
+    //Join the arary to dot format, for example [3,2,1] to 3.2.1
     var number = levelTracker.join(".")
 
+    //Call function to create this row
     tableString += checklistRow(thisLevel, thisItem, number)
   }
   tableString += '</table>'
@@ -220,19 +239,23 @@ function checklistTable(chkarray) {
 
 }
 
-
+//Create a row
 function checklistRow(thisLevel, thisItem, number)
 {
 
+  //Decalare the html string that will be the table row
   var  tableString = '';
 
+  // If level = 1, then write section header
   if (thisLevel == 1) {
       tableString += '<tr class="chk_row1"><td colspan="4">'+ number +'. '+ thisItem +'</td></tr>';
       tableString += '<tr><td></td><td>Initials</td><td>#No</td><td>Checklist Item</td></tr>';
-      return tableString
 
+
+  //For any sub-levels that are items and not section headers
   } else {
 
+    //Assign different classes according to level
     switch (thisLevel) {
         case 2:
             tr_class = 'class="chk_row2"';
@@ -244,56 +267,67 @@ function checklistRow(thisLevel, thisItem, number)
             tr_class = 'class="chk_row4"';
             break;
         default:
-          /*implicitly 5 or above*/
+            //Everything above 4 will be class 5
             tr_class = 'class="chk_row5"';
     }
 
+    //Write the string that is the table row
     tableString += '<tr '+tr_class+'><td nowrap>[ __ ]</td><td></td><td nowrap class="chk_number">'+ number +'</td><td class="chk_item">'+ thisItem +'</td></tr>';
-
-    return tableString
   }
 
-
-
-
-
+  //Return the string.
+  return tableString
 }
 
 
 /* Functions needed for the main page */
 
-
-
+//Write life cycle array
 function dispTopics_lc(topicArray)
   {
+    //Set the div and table calss
     var topicTable = '<div class="table-div"><table style="width:100%">';
-    topicTable += '<col width=20%><col width=80%><tr>';
 
+    //Relative size of image and title/description
+    topicTable += '<col width=20%><col width=80%>';
+
+    //Loop over all topics
     for ( topic = 0 ; topic < topicArray.length ; ++topic ) {
 
-      topicTable += '<td rowspan="2"><a href="/wiki/'+ topicArray[topic][1] +'"><img alt="'+ topicArray[topic][1] +' Image" src="'+ topicArray[topic][0] +'" class="dw-mp-topicimg"></td>';
-      topicTable += '<td class="td_lc_titl"><a href="/wiki/'+ topicArray[topic][1] +'">'+ topicArray[topic][1] +'</a></td>';
-      topicTable += '</tr><tr>';
-      topicTable += '<td class="td_lc_desc">'+ topicArray[topic][2] +'</td></tr>';
+      //Write imaage
+      topicTable += '<tr><td rowspan="2"><a href="/wiki/'+ topicArray[topic][1] +'"><img alt="'+ topicArray[topic][1] +' Image" src="'+ topicArray[topic][0] +'" class="dw-mp-topicimg"></td>';
+      //Write title
+      topicTable += '<td class="td_lc_titl"><a href="/wiki/'+ topicArray[topic][1] +'">'+ topicArray[topic][1] +'</a></td></tr>';
+      //Write decription
+      topicTable += '<tr><td class="td_lc_desc">'+ topicArray[topic][2] +'</td></tr>';
 
     }
 
+    //Close table and div
     topicTable += '</table></div>';
 
+    //Return table and div
     return topicTable;
   }
 
+
+  //Write Stand Alone topics
   function dispTopics_sa(topicArray)
   {
 
+    //Initiate table
     var topicTable = '<div class="table-div"><table style="width:100%">';
 
+    //Loop over all topics
     for ( topic = 0 ; topic < topicArray.length ; ++topic ) {
 
+      //Write each row
       topicTable += '<tr><td class="td_sa"><a href="/wiki/'+ topicArray[topic] +'">'+ topicArray[topic] +'</a></td></tr>';
     }
 
+    //Close table and div
     topicTable += '</table></div>';
 
+    //Return table and div
     return topicTable;
   }
