@@ -45,6 +45,7 @@
 .sa-column  .right-td, #dimewiki-mainpage-sa-js  {
   vertical-align:center;
   display: block;
+  line-height: 1.2
 }
 #dimewiki-mainpage-sa-js {
   margin-bottom: 40px;
