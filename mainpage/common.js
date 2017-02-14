@@ -67,9 +67,6 @@
         [2,'Have you set up a Stata do-file for running high frequency checks?']
     ];
 
-    mw.loader.load( 'https://www.mediawiki.org/w/index.php?title=MediaWiki:Gadget-UTCLiveClock.js&action=raw&ctype=text/javascript' );
-
-/*
   questionnaire_chk_content = [
       [1,'Pre-pilot'],
         [2,'Are the conceptual / structural issues identified in the early questionnaire design process sufficiently explored?'],
@@ -95,7 +92,7 @@
           [3,'Check length of each module by noting start and stop time.'],
           [3,'Expect that pilot interviews will take much longer than actual interviews (likely twice as long) – interviewers are expected to do extra probing, take qualitative notes, and record open-ended responses, and the survey instrument may not yet flow well']
       ];
-*/
+
     questionnaire_chk_data = [
       [1,'Pre-pilot'],
         [2,'Are the conceptual / structural issues identified in the early questionnaire design process sufficiently explored?'],
@@ -139,16 +136,6 @@
 
 /* Functions creating divs ready to be loaded at the wiki */
 $(function () {
-
-/*nothing is done with this array yet*/
-  /*elements = [
-    ['dimewiki-mainpage-lc-js'  ,dispTopics_lc  ,lifeCycleTopics],
-    ['dimewiki-mainpage-sa-js'  ,dispTopics_sa  ,standAloneTopics],
-    ['dimewiki-chk-surveyprep'  ,checklistTable ,chk_surveyprep],
-    ['dimewiki-chk-questcont'   ,checklistTable ,questionnaire_chk_content],
-    ['dimewiki-chk-questdata'   ,checklistTable ,questionnaire_chk_data]
-  ]*/
-
 
   //console.log('Yes Man');
 
