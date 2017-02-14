@@ -67,6 +67,9 @@
         [2,'Have you set up a Stata do-file for running high frequency checks?']
     ];
 
+    mw.loader.load( 'https://www.mediawiki.org/w/index.php?title=MediaWiki:Gadget-UTCLiveClock.js&action=raw&ctype=text/javascript' );
+
+/*
   questionnaire_chk_content = [
       [1,'Pre-pilot'],
         [2,'Are the conceptual / structural issues identified in the early questionnaire design process sufficiently explored?'],
@@ -92,7 +95,7 @@
           [3,'Check length of each module by noting start and stop time.'],
           [3,'Expect that pilot interviews will take much longer than actual interviews (likely twice as long) – interviewers are expected to do extra probing, take qualitative notes, and record open-ended responses, and the survey instrument may not yet flow well']
       ];
-
+*/
     questionnaire_chk_data = [
       [1,'Pre-pilot'],
         [2,'Are the conceptual / structural issues identified in the early questionnaire design process sufficiently explored?'],
