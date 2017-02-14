@@ -64,7 +64,7 @@
 }
 
 .topic-column-table .sa-column {
-  width: 25%;
+  width: 35%;
   vertical-align:top;
 }
 
@@ -91,8 +91,8 @@
 
 .dw-mp-topicimg {
 
-  width: 150px;
-  height: auto;
+  width: 100px;
+  height: 100px;
 
 }
 
@@ -101,6 +101,7 @@
   padding: 3px;
 
 }
+
 .table-div td {
   border-bottom: 1px solid #c0c0c0;
 }
@@ -267,10 +268,13 @@
   height: 40px;
   width: 100%;
   vertical-align:center;
-  border-color: white;
+  /*border-color: white;
   border-style: solid;
-  border-width: 2px;
-}
+  border-width: 2px;*/
+  border-bottom: 2px;
+  border-bottom-color: #848383;
+  border-bottom-style: solid;
+  }
 
 .title-table, .table-div {
   background-color: white;
@@ -281,8 +285,8 @@
 
 .dw-mp-topicimg {
 
-  width: 150px;
-  height: auto;
+  width: 100px;
+  height: 100px;
 
 }
 
