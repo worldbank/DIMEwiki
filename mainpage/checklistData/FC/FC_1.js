@@ -1,5 +1,6 @@
-questionnaire_chk_content = [
+$( 
 
+  questionnaire_chk_content = [
     [1,'Pre-pilot'],
       [2,'Are the conceptual / structural issues identified in the early questionnaire design process sufficiently explored?'],
       [2,'How might the composition of the focus (gender, age, religion, caste/socioeconomic status) affect responses?'],
@@ -24,4 +25,4 @@ questionnaire_chk_content = [
         [3,'Check length of each module by noting start and stop time.'],
         [3,'Expect that pilot interviews will take much longer than actual interviews (likely twice as long) – interviewers are expected to do extra probing, take qualitative notes, and record open-ended responses, and the survey instrument may not yet flow well']
     ];
-    
+  );
