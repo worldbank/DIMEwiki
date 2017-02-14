@@ -1,25 +1,25 @@
 /* Arrays with data needed for the main page */
 
   lifeCycleTopics = [
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Impact Evaluation Design', 'A brief introduction to common IE methods, concept note, monitoring compliance and impact evaluation manual. The page also has links to sample IE concept note, protocol for monitoring compliance and impact evaluation manual.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Sampling & Power Calculations','This page discusses how to create a statistically valid sample representative of the population of interest for impact evaluation.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Human Subjects Approval','This page discusses the reason behind getting Human Subjects Approval and the ways to get the approval.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Preparing for Data Collection','This page highlights the essential steps in preparing for data collection by discussing developing survey budget, timeline for data collection, composition and number of field teams, field team roles and responsibilities, and defining survey protocol.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Survey Firm Procurement','This page covers the procurement process for a data collection agency and includes sample survey firm TORs'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Questionnaire Design','This topic covers questionnaire design process, basic rules for questionnaire design, and measurement issues.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Questionnaire Translation','This page talks about the best practices to follow when translating questionnaires.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Questionnaire Programming','This topic discusses how to take the questionnaire you developed during Questionnaire Design and make it a digital CAPI questionnaire. It discusses how to plan that work and best practices to remember to make the work flow as easy as possible for the enumerator as well as reducing the risk for lost or corrupted data.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Survey Pilot','This page discusses what a survey pilot is, and also discusses the stages, timeline, people involved, and the structure of a survey pilot.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Enumerator Training','This page highlights the best practices to follow during enumerator training and the development of enumerator manual.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Monitoring Data Quality','This page discusses ways in which survey data can be monitored for quality. The page also includes practical tips on data quality management and tips on how to conduct duplicate and survey log checks, high frequency checks, and back checks.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Data Management','This page lists out the steps for proper data management and includes advice to organize project folders, and data sets.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Data Cleaning','This page discusses data cleaning and the best practices to following while cleaning IE data.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Data Analysis','This page discusses the process of analyzing IE data to help produce information useful for decision making.'],
-     ['https://dimewiki.worldbank.org/images/6/62/Downarrow.png','Reproducible Research','This page discusses the importance of reproducible research and the ways in which the Impact Evaluation community can make their research more transparent.']
+     ['https://dimewiki.worldbank.org/images/7/72/IE_design.PNG','Impact Evaluation Design', 'Impact Evaluation methods, concept note, monitoring compliance and impact evaluation manual. The page also has links to sample IE concept note, protocols for monitoring compliance, and impact evaluation manual.'],
+     ['https://dimewiki.worldbank.org/images/3/3c/Sample_Size_Formula.png','Sampling & Power Calculations','How to create a statistically valid sample representative of the population of interest for impact evaluation.'],
+     ['https://dimewiki.worldbank.org/images/d/da/Human_subjects.jpg','Human Subjects Approval','Discussion of where, when, and how to seek ethical approval for impact evaluations .'],
+     ['https://dimewiki.worldbank.org/images/3/31/Preparing_for_data_collection.jpg','Preparing for Data Collection','How to prepare for data collection, including budget, timeline, field team roles and responsibilities, and survey protocols.'],
+     ['https://dimewiki.worldbank.org/images/e/e6/Survey_firm_procurement.jpg','Survey Firm Procurement','How to select and hire a data collection agency; includes sample survey firm TORs'],
+     ['https://dimewiki.worldbank.org/images/thumb/0/09/Questionnaire_design.jpg/464px-Questionnaire_design.jpg','Questionnaire Design','How to design a high-quality questionnaire, including discussion of common measurement issues.'],
+     ['https://dimewiki.worldbank.org/images/7/7f/Translation.jpg','Questionnaire Translation','Guidelines and best practices for questionnaire translation.'],
+     ['https://dimewiki.worldbank.org/images/8/8e/Questionnaire_programming.jpg','Questionnaire Programming','How to transform your survey instrument into a digital CAPI questionnaire, including guidance on work flows and best practices to reduce the risk for lost or corrupted data.'],
+     ['https://dimewiki.worldbank.org/images/f/f0/Survey_pilot.png','Survey Pilot','How to pilot a survey, including pilot stages, timeline, people involved, and structure of the field work.'],
+     ['https://dimewiki.worldbank.org/images/e/e9/Enumerator_training.png','Enumerator Training','Guidelines for developing the enumerator manual and structuring enumerator training.'],
+     ['https://dimewiki.worldbank.org/images/5/55/Monitoring_data_quality.png','Monitoring Data Quality','How to check the quality of the data in real time, including practical checks for duplicates, completeness of survey logs, high frequency checks, and back checks.'],
+     ['https://dimewiki.worldbank.org/images/thumb/a/ab/Example_file_and_folder_structure.png/800px-Example_file_and_folder_structure.png','Data Management','Best practices for data management, including organization of project folders and data sets.'],
+     ['https://dimewiki.worldbank.org/images/6/63/Data_cleaning.png','Data Cleaning','Best practice for cleaning raw primary datasets.'],
+     ['https://dimewiki.worldbank.org/images/2/2d/Data_analysis_v3.jpg','Data Analysis','How to analyze IE data to produce information useful for decision making.'],
+     ['https://dimewiki.worldbank.org/images/7/74/Reproducible_research.png','Reproducible Research','Tools and tips for increasing research transparency in the impact evaluation community.']
    ];
 
    standAloneTopics = [
-     'Stata Coding Practices','SurveyCTO Coding Practices','Geo Spatial Data','Check Lists for Field Coordinators','i2i Trust Fund for Impact Evaluation','Impact Evaluation Team','Cost-effectiveness Analysis'];
+     'Stata Coding Practices','SurveyCTO Coding Practices','Geo Spatial Data','Check Lists','i2i Trust Fund for Impact Evaluation','Impact Evaluation Team','Cost-effectiveness Analysis'];
    standAloneTopics.sort(function(a, b){return 0.5 - Math.random()});
 
 
@@ -135,7 +135,7 @@
     ];
 
 /* Functions creating divs ready to be loaded at the wiki */
-/*$(function () {*/
+$(function () {
 
 /*nothing is done with this array yet*/
   /*elements = [
@@ -172,27 +172,21 @@
 
 
 
-/*}());*/
+}());
 
 
 /* Functions needed for checklists */
 
 function checklistTable(chkarray) {
 
-  //Write the header of each checklit
   var tableString = '<table class="chk_table">';
   tableString += '<tr><th rowspan="5" colspan="3"><img alt="DIME Image" src="https://dimewiki.worldbank.org/images/d/d7/DIMEi2i.JPG" class="chk_logo_img"></th>';
-  tableString += '<tr><th>Project name: _______________________________________________</th>';
-  tableString += '<tr><th>Country: _______________________________________________</th>';
-  tableString += '<tr><th>District: _______________________________________________</th>';
-  tableString += '<tr><th>Year, Month and/or Day:  ____________________________</th>';
+  tableString += '<tr><th class="chk_header">Project name: _______________________________________</th>';
+  tableString += '<tr><th class="chk_header">Country: ___________________________________________</th>';
+  tableString += '<tr><th class="chk_header">District: ____________________________________________</th>';
+  tableString += '<tr><th class="chk_header">Year, Month and/or Day:  _____________________________</th>';
 
-  /*
-    Write all checklist items
-  */
-
-
-  var levelTracker = [0]
+var levelTracker = [0]
 
   for ( row = 0 ; row < chkarray.length ; ++row ) {
     var thisLevel =chkarray[row][0];
@@ -267,7 +261,7 @@ function checklistRow(thisLevel, thisItem, number)
 function dispTopics_lc(topicArray)
   {
     var topicTable = '<div class="table-div"><table style="width:100%">';
-    topicTable += '<col width=20%><col width=80%><tr>';
+    topicTable += '<col width=15%><col width=85%><tr>';
 
     for ( topic = 0 ; topic < topicArray.length ; ++topic ) {
 
