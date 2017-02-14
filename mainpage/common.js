@@ -137,6 +137,16 @@
 /* Functions creating divs ready to be loaded at the wiki */
 $(function () {
 
+/*nothing is done with this array yet*/
+  /*elements = [
+    ['dimewiki-mainpage-lc-js'  ,dispTopics_lc  ,lifeCycleTopics],
+    ['dimewiki-mainpage-sa-js'  ,dispTopics_sa  ,standAloneTopics],
+    ['dimewiki-chk-surveyprep'  ,checklistTable ,chk_surveyprep],
+    ['dimewiki-chk-questcont'   ,checklistTable ,questionnaire_chk_content],
+    ['dimewiki-chk-questdata'   ,checklistTable ,questionnaire_chk_data]
+  ]*/
+
+
   //console.log('Yes Man');
 
   if (document.getElementById("dimewiki-mainpage-lc-js") != null ) {
