@@ -19,7 +19,7 @@
    ];
 
    standAloneTopics = [
-     'Stata Coding Practices','SurveyCTO Coding Practices','Geo Spatial Data','Check Lists','i2i Trust Fund for Impact Evaluation','Impact Evaluation Team','Cost-effectiveness Analysis'];
+     'Stata Coding Practices','SurveyCTO Coding Practices','Geo Spatial Data','i2i Trust Fund for Impact Evaluation'];
    standAloneTopics.sort(function(a, b){return 0.5 - Math.random()});
 
 
