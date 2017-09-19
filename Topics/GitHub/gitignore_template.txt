@@ -47,6 +47,10 @@
 !DataWork/**/*.m
 
 #######################
+# files created by iegitaddtxt to keep empty directories in the cloud (see https://github.com/worldbank/ietoolkit)
+!DataWork/**/gitKeep.txt
+
+#######################
 # Include some additional file formats in any output folder
 !DataWork/**/Output/**/*.txt
 !DataWork/**/Output/**/*.csv
@@ -54,9 +58,4 @@
 #######################
 # Explicitly exclude the encrypted folder branch
 **/EncryptedData/
-
-
-
-
-
 
