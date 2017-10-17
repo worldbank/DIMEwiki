@@ -15,6 +15,7 @@
 # file) that we do not want to ignore
 !.gitignore
 !.gitattributes
+!.md
 
 #######################
 # For performance reasons, if a folder is already ignored, then 
@@ -29,6 +30,9 @@
 # included no matter where in the DataWork folder they are 
 # located unless that folder is explicitly ignored. See example
 # with EncryptedData folder below. 
+
+# Markdown
+!DataWork/**/*.md
 
 # Stata
 !DataWork/**/*.do
@@ -47,13 +51,12 @@
 !DataWork/**/*.m
 
 #######################
-# files created by iegitaddtxt to keep empty directories in the cloud (see https://github.com/worldbank/ietoolkit)
-!DataWork/**/gitKeep.txt
-
-#######################
 # Include some additional file formats in any output folder
 !DataWork/**/Output/**/*.txt
 !DataWork/**/Output/**/*.csv
+!DataWork/**/Output/**/*.xml
+!DataWork/**/Output/**/*.eps
+!DataWork/**/Output/**/*.svg
 
 #######################
 # Explicitly exclude the encrypted folder branch
