@@ -11,11 +11,15 @@
 *
 
 #######################
-# List files in the top folder (same folder as this .gitignore 
-# file) that we do not want to ignore
+# List of files with GitHub functionality anywhere in the repop 
+# that we do not want to ignore
+
+# These files include GitHub settings
 !.gitignore
 !.gitattributes
-!.md
+
+# Keep markdown files used for documentation on GitHub
+!*.md
 
 #######################
 # For performance reasons, if a folder is already ignored, then 
@@ -30,9 +34,6 @@
 # included no matter where in the DataWork folder they are 
 # located unless that folder is explicitly ignored. See example
 # with EncryptedData folder below. 
-
-# Markdown
-!DataWork/**/*.md
 
 # Stata
 !DataWork/**/*.do
