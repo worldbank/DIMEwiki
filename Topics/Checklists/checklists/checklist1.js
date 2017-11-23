@@ -19,4 +19,4 @@
 [3,"Are there times when the respondent looks bored? Uncomfortable? Losing interest?"],
 [2,"Could the order of modules be improved? The order of questions within modules?"],
 [2,"How long does the interview take?"],
-[3,"Check length of each module by noting start and stop time."],
+[3,"Check length of each module by noting start and stop time."]
