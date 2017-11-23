@@ -21,4 +21,3 @@
        [11,"How long does the interview take?"],
          [111,"Check length of each module by noting start and stop time."],
          [111,"Expect that pilot interviews will take much longer than actual interviews (likely twice as long) – interviewers are expected to do extra probing, take qualitative notes, and record open-ended responses, and the survey instrument may not yet flow well"]
-     ];
