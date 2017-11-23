@@ -7,7 +7,7 @@ $(function(){
     var checklistname = $('#chcklistName').val();
 
 
-    var requri   =   'https://api.github.com/repos/worldbank/DIMEwiki/contents/Topics/Checklists/checklists/'+ checklistname + '.json?ref=checklistAjax'
+    var requri   =   'https://api.github.com/repos/worldbank/DIMEwiki/contents/Topics/Checklists/checklists/'+ checklistname + '.js?ref=checklistAjax'
 
 
     requestJSON(requri, function(json) {
