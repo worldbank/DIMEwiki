@@ -1,6 +1,10 @@
 # Documentation for checklist on the DimeWiki.
 
-The DimeWiki is a resource with best practices for data management, field work and other topics related to data work in development research. See the [main page](https://dimewiki.worldbank.org/wiki/Main_Page) of the wiki. On this wiki there are multiple checklists that can be used to help remembering best practices in important steps of the data collection. See those checklists [here](https://dimewiki.worldbank.org/wiki/Check_Lists). This README file shows documentation on how to [edit an already existing checklist](#edit-a-checklist), how to [create a new checklist](#create-a-checklist) and a [brief technical documentation](#brief-technical-documentation) on how the checklist data is pulled from GitHub and generated to checklist on the wiki. You do not need to understand the technical documentation to edit or create checklists.
+The DimeWiki is a resource with best practices for data management, field work and other topics related to data work in development research. See the [main page](https://dimewiki.worldbank.org/wiki/Main_Page) of the wiki. On this wiki there are multiple checklists that can be used to help remembering best practices in important steps of the data collection. See those checklists [here](https://dimewiki.worldbank.org/wiki/Check_Lists).
+
+This README file includes documentation on how to [edit an already existing checklist](#edit-a-checklist), how to [create a new checklist](#create-a-checklist) and a [brief technical documentation](#brief-technical-documentation) on how the checklist data is pulled from GitHub and generated to checklist on the wiki. You do not need to understand the technical documentation to edit or create checklists.
+
+If you need help to edit or create a checklist, feel free to contact us at dimewiki@worldbank.org.
 
 ## Edit a checklist
 To edit a checklist you must have a GitHub account. If you do not have one, create one for free [here](https://github.com/join).
@@ -9,16 +13,16 @@ To edit the checklist go to [the checklist folder](https://github.com/worldbank/
 
 If you are familiar with GitHub you can clone this repository and edit this file on your computer, but an easier way would be to update it in the browser. To do that, click the pen icon above the file next to the buttons _raw_, _blame_ and _history_.
 
-Here you can edit the checklist. Each checklist item is one array on this format `[number,'text']`. The **text** must be enclosed in double quotes (`"`). If you want to use a double quotes in a text then you need to write `\"` as in `"This is an \"example\"."`. The **number** indicates the title level, where 1 is the section title, and 2 is a sub-item, 3 is a sub-sub item, and so forth. There is no limit how many layers of sub-sub-sub items you use. The numbering of items is generated in the wiki, so if you have two sub-items after each other, both of them should have the number 2. See example below:
+Here you can edit the checklist. Each checklist item is one array on this format `[number,"text"]`. The **text** must be enclosed in double quotes `"`. If you want to use a double quotes in a text then you need to write `\"` as in `"This is an \"example\"."`. The **number** indicates the title level, where 1 is the section title, and 2 is a sub-item, 3 is a sub-sub item, and so forth. There is no limit how many layers of sub-sub-sub items you use. The numbering of items is generated in the wiki, so if you have two sub-items after each other, both of them should have the number 2. See example below:
 
 ```
-  [1,"Main Title 1"],
-   [2,"Sub item 1.1"],
-   [2,"Sub item 1.2"],
-  [1,"Main Title 2"],
-   [2,"Sub item 2.1"],
-    [3,"Sub-sub item 2.1.1"],
-   [2,"Sub item 2.2"]
+  [1,"Main title 1 text"],
+   [2,"Sub item 1.1 text"],
+   [2,"Sub item 1.2 text"],
+  [1,"Main title 2 text"],
+   [2,"Sub item 2.1 text"],
+    [3,"Sub-sub item 2.1.1 text"],
+   [2,"Sub item 2.2 text"]
 ```
 
 The indentation is not necessary but makes the list easier to read. Note that each array **must** be separated with a comma. So if you add a new item, make sure it is followed by a comma unless it is the last item.
