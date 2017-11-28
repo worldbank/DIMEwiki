@@ -1,6 +1,6 @@
 # Documentation for checklist on the DimeWiki.
 
-The DimeWiki is a resource with best practices for data management, field work and other topics related to data work in devlopment research. See the [main page](https://dimewiki.worldbank.org/wiki/Main_Page) of the wiki. On this wiki there are multiple checklists that can be used to help rembering bestpractices in important steps of the data collection. See those checklists [here](https://dimewiki.worldbank.org/wiki/Check_Lists). This README file shows documentation on how to edit an already existing checklist, how to create a new checklist and a short technical documentation on how the checklist data is pulled from GitHub and generated to checklist on the wiki. You do not need to understand the technical documentation to update and create checklists.
+The DimeWiki is a resource with best practices for data management, field work and other topics related to data work in devlopment research. See the [main page](https://dimewiki.worldbank.org/wiki/Main_Page) of the wiki. On this wiki there are multiple checklists that can be used to help rembering bestpractices in important steps of the data collection. See those checklists [here](https://dimewiki.worldbank.org/wiki/Check_Lists). This README file shows documentation on how to [edit an already existing checklist](#edit-a-checklist), how to [create a new checklist](#create-a-checklist) and a [brief technical documentation](#brief-technical-documentation) on how the checklist data is pulled from GitHub and generated to checklist on the wiki. You do not need to understand the technical documentation to edit or create checklists.
 
 ## Edit a checklist
 To edit a checklist you need to have a GitHub account. If you do not have one, create one for free [here](https://github.com/join).
@@ -27,5 +27,5 @@ When you are done with your edits you need to "commit" your changes, which means
 
 ## Create a checklist
 
-## Breif technical documentation
+## Brief technical documentation
 The checklists are edited here on GitHub and pulled into the wiki page using an [https://en.wikipedia.org/wiki/Ajax_(programming) AJAX] call to the [https://developer.github.com/v3/ GitHub API]
