@@ -41,7 +41,7 @@ Once you have some checklist items in your new checklist, you can create the che
 To create the checklist, use this template but update the *checklist_URL* to the URL of the checklist on the wiki you just created and "*chk_checklistName*.js" to the file name you chose above (but do not include .js).
 
 ```
-Get printable version by clicking on ''printable version'' in the menu to the left. The latest version of this checklist can be found at https://dimewiki.worldbank.org/wiki/checklist_URL.
+Get printable version by clicking on ''printable version'' in the menu to the left. Find instructions for editing the checklist [https://github.com/worldbank/DIMEwiki/tree/master/Topics/Checklists here]. The latest version of this checklist can be found at https://dimewiki.worldbank.org/wiki/checklist_URL.
 
 
 <div id="checklist_name"></div>
