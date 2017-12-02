@@ -1,6 +1,6 @@
-# Documentation for checklist on the DimeWiki.
+# Documentation for editing checklist on the DimeWiki.
 
-The DimeWiki is a resource with best practices for data management, field work and other topics related to data work in development research. See the [main page](https://dimewiki.worldbank.org/wiki/Main_Page) of the wiki. On this wiki there are multiple checklists that can be used to help remembering best practices in important steps of the data collection. See those checklists [here](https://dimewiki.worldbank.org/wiki/Check_Lists).
+The DimeWiki is a resource for best practices in data management, field work and other topics related to data work in development research. See the [main page](https://dimewiki.worldbank.org/wiki/Main_Page) of the wiki. On this wiki there are multiple checklists that can be used to help remembering best practices in important steps of the data collection. See those checklists [here](https://dimewiki.worldbank.org/wiki/Check_Lists).
 
 This README file includes documentation on how to [edit an already existing checklist](#edit-a-checklist), how to [create a new checklist](#create-a-checklist) and a [brief technical documentation](#brief-technical-documentation) on how the checklist data is pulled from GitHub and generated to checklist on the wiki. You do not need to understand the technical documentation to edit or create checklists.
 
@@ -9,7 +9,7 @@ If you need help to edit or create a checklist, feel free to contact us at dimew
 ## Edit a checklist
 To edit a checklist you must have a GitHub account. If you do not have one, create one for free [here](https://github.com/join).
 
-To edit the checklist go to [the checklist folder](https://github.com/worldbank/DIMEwiki//Topics/Checklists/checklists) (KB: This link won't work until this branch is merged) and click the checklist that you want to edit. On the wiki you can find the name of the checklist at the bottom of the checklist (KB: I will add this if we decide for this).
+To edit the checklist go to [the checklist folder](https://github.com/worldbank/DIMEwiki/tree/master/Topics/Checklists/checklists) and click the checklist that you want to edit. On the wiki you can find the name of the checklist at the bottom of the checklist.
 
 If you are familiar with GitHub you can clone this repository and edit this file on your computer, but an easier way would be to update it in the browser. To do that, click the pen icon above the file next to the buttons _raw_, _blame_ and _history_.
 
@@ -34,11 +34,11 @@ If you make multiple commit by *proposing a file change* you won't see the edits
 ## Create a checklist
 To create a checklist you must have a GitHub account. If you do not have one, create one for free [here](https://github.com/join).
 
-To create a new checklist go to [the checklist folder](https://github.com/worldbank/DIMEwiki//Topics/Checklists/checklists) (KB: This link won't work until this branch is merged). In this folder create a file "*checklist_name*.js" where you replace *checklist_name* with the unique checklist name you pick. After you created the file you can add content in exactly the same way as already described in section on how to [edit an already existing checklist](#edit-a-checklist). If you are familiar with GitHub you can do these two steps in a code editor by *cloning* the repository, but it is perfectly fine to do these two steps in the browser.
+To create a new checklist go to [the checklist folder](https://github.com/worldbank/DIMEwiki/tree/master/Topics/Checklists/checklists). In this folder create a file "*chk_checklistName*.js" where you replace *checklistName* with the unique checklist name you pick. Please keep the prefix *chk_* After you created the file you can add content in exactly the same way as already described in section on how to [edit an already existing checklist](#edit-a-checklist). If you are familiar with GitHub you can do these two steps in a code editor by *cloning* the repository, but it is perfectly fine to do these two steps in the browser as described here.
 
-Once you have some checklist items in your new checklist, you can create the checklist page on the wiki. Type the URL you want using this format: https://dimewiki.worldbank.org/wiki/Checklist:_Your_Checklist_Name. The Checklist name here does not need to match the file name *checklist_name*.js but it is good if they are similar.
+Once you have some checklist items in your new checklist, you can create the checklist page on the wiki. Type the URL you want using this format: https://dimewiki.worldbank.org/wiki/Checklist:_Your_Checklist_Name. The checklist name here does not need to match the file name *checklist_name*.js but it is good if they are similar.
 
-To create the checklist, use this template but update the *checklist_URL* to the URL of the checklist on the wiki you just created and *checklist_name* to the file name you chose above (but do not include .js).
+To create the checklist, use this template but update the *checklist_URL* to the URL of the checklist on the wiki you just created and "*chk_checklistName*.js" to the file name you chose above (but do not include .js).
 
 ```
 Get printable version by clicking on ''printable version'' in the menu to the left. The latest version of this checklist can be found at https://dimewiki.worldbank.org/wiki/checklist_URL.
@@ -53,16 +53,16 @@ This article is part of the topic [[Check Lists]]
 
 ```
 
-The final thing you need to do is to go to [MediaWiki:Common.js](https://dimewiki.worldbank.org/wiki/MediaWiki:Common.js) and add your *checklist_name* to the checklist array that looks like this: (KB: this array does not exist yet)
+The final thing you need to do is to go to [MediaWiki:Common.js](https://dimewiki.worldbank.org/wiki/MediaWiki:Common.js) and add your *checklistName* to the checklist array that looks like this:
 
 ```
-checklist_array = [
-  'checklist1', 'checklist2',
-  'checklist3', 'your_checklist_name'
-]
+checklists = [
+  'chk_surveyprep', 'chk_questcont', 'chk_questdata',
+  'chk_microdata', 'chk_datacleaning', 'checklistName'
+];
 ```
 
-Now you can wiki page with your checklist and you will see it there.
+After follwoing these three steps you can now see your checklist on the wiki page, and you can keep editing it using GitHub.
 
 ## Brief technical documentation
 (KB: I will do this later)
