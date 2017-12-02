@@ -15,7 +15,7 @@ If you are familiar with GitHub you can clone this repository and edit this file
 
 Here you can edit the checklist. Each checklist item is one array on this format `[number,"text"]`. The **text** must be enclosed in double quotes `"`. If you want to use a double quotes in a text then you need to write `\"` as in `"This is an \"example\"."`. The **number** indicates the title level, where 1 is the section title, and 2 is a sub-item, 3 is a sub-sub item, and so forth. There is no limit how many layers of sub-sub-sub items you use. The numbering of items is generated in the wiki, so if you have two sub-items after each other, both of them should have the number 2. See example below:
 
-```
+```javascript
   [1,"Main title 1 text"],
    [2,"Sub item 1.1 text"],
    [2,"Sub item 1.2 text"],
@@ -40,7 +40,7 @@ Once you have some checklist items in your new checklist, you can create the che
 
 To create the checklist, use this template but update the *checklist_URL* to the URL of the checklist on the wiki you just created and "*chk_checklistName*.js" to the file name you chose above (but do not include .js).
 
-```
+```text.html.mediawiki
 Get printable version by clicking on ''printable version'' in the menu to the left. Find instructions for editing the checklist [https://github.com/worldbank/DIMEwiki/tree/master/Topics/Checklists here]. The latest version of this checklist can be found at https://dimewiki.worldbank.org/wiki/checklist_URL.
 
 
@@ -55,7 +55,7 @@ This article is part of the topic [[Check Lists]]
 
 The final thing you need to do is to go to [MediaWiki:Common.js](https://dimewiki.worldbank.org/wiki/MediaWiki:Common.js) and add your *checklistName* to the checklist array that looks like this:
 
-```
+```javascript
 checklists = [
   'chk_surveyprep', 'chk_questcont', 'chk_questdata',
   'chk_microdata', 'chk_datacleaning', 'checklistName'
