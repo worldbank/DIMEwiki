@@ -38,18 +38,17 @@ To create a new checklist go to [the checklist folder](https://github.com/worldb
 
 Once you have some checklist items in your new checklist, you can create the checklist page on the wiki. Type the URL you want using this format: https://dimewiki.worldbank.org/wiki/Checklist:_Your_Checklist_Name. The checklist name here does not need to match the file name *checklist_name*.js but it is good if they are similar.
 
-To create the checklist, use this template but update the *checklist_URL* to the URL of the checklist on the wiki you just created and "*chk_checklistName*.js" to the file name you chose above (but do not include .js).
+To create the wiki page for the checklist, use this template below. You do not have to copy and paste the code in teh box below, you can simply type `{{subst:checklist}}` to import the code below. After you created the artikle, you need to update the *checklist_URL* to the URL of the checklist on the wiki you just created and "*chk_checklistName*.js" to the file name you chose above (but do not include .js).
 
 ```text.html.mediawiki
 Get printable version by clicking on ''printable version'' in the menu to the left. Find instructions for editing the checklist [https://github.com/worldbank/DIMEwiki/tree/master/Topics/Checklists here]. The latest version of this checklist can be found at https://dimewiki.worldbank.org/wiki/checklist_URL.
-
 
 <div id="checklist_name"></div>
 
 ==Back to Parent ==
 This article is part of the topic [[Check Lists]]
 
-[[Category: Data Cleaning]] [[Category: Check Lists]]
+[[Category: Check Lists]]
 
 ```
 
