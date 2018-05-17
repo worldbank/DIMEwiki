@@ -1,17 +1,19 @@
 ########################################################################
 #
 # .gitignore DIME template
-# (assumes iefolder folder structure but can be modified) 
+# (assumes iefolder folder structure but can be modified)
+# Note that you need to rename this file .gitignore and put it in the
+# top folder of your repository
 #
 ########################################################################
 
 #######################
-# Start by ignoring everything, and below we are explicitly saying 
+# Start by ignoring everything, and below we are explicitly saying
 # what to not ignore
 *
 
 #######################
-# List of files with GitHub functionality anywhere in the repop 
+# List of files with GitHub functionality anywhere in the repo
 # that we do not want to ignore
 
 # These files include GitHub settings
@@ -22,18 +24,18 @@
 !*.md
 
 #######################
-# For performance reasons, if a folder is already ignored, then 
+# For performance reasons, if a folder is already ignored, then
 # GitHub does not check the content for that folder for matches
-# with additional rules. The line below includes folder in the 
-# top folder (but not their content), so that anything mathcing 
+# with additional rules. The line below includes folder in the
+# top folder (but not their content), so that anything matching
 # the rules below will still not be ignored.
 !*/
 
 #######################
-# The following file types are code that should always be 
-# included no matter where in the DataWork folder they are 
+# The following file types are code that should always be
+# included no matter where in the DataWork folder they are
 # located unless that folder is explicitly ignored. See example
-# with EncryptedData folder below. 
+# with EncryptedData folder below.
 
 # Stata
 !DataWork/**/*.do
@@ -62,4 +64,3 @@
 #######################
 # Explicitly exclude the encrypted folder branch
 **/EncryptedData/
-
