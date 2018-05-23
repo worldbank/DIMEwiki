@@ -2,8 +2,14 @@
 #
 # .gitignore DIME template
 # (assumes iefolder folder structure but can be modified)
-# Note that you need to rename this file .gitignore and put it in the
-# top folder of your repository
+# We recommend that you create a .gitignore file using GitHub's tools and
+# replace the content of that file with the content of this file. Otherwise
+# you have to rename this file .gitignore. But if you rename the fine in a
+# regular folder window PCs and Macs are likely to keep the file extension
+# so that the file ends up being names .gitignore.txt. Code editors like, Atom,
+# can edit the file extension, but if you are not familiar with how to do that,
+# we recommend that you generate an ignore file using GitHub and simply replace
+# the content of that file. 
 #
 ########################################################################
 
