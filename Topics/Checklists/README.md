@@ -27,14 +27,16 @@ Here you can edit the checklist. Each checklist item is one array on this format
 
 The indentation is not necessary but makes the list easier to read. Note that each array **must** be separated with a comma. So if you add a new item, make sure it is followed by a comma unless it is the last item.
 
-When you are done with your edits you need to "commit" your changes, which means saving to GitHub. If you are a collaborator of this repository you have the option to **commit directly** otherwise you will be asked to **propose file change**. When you propose a change the edit will be sent to a collaborator for approval. It is very helpful if enter a description of your edit in the optional description field.
+When you are done with your edits you need to "commit" your changes, which means saving to GitHub. If you are a collaborator of this repository you have the option to **commit directly** otherwise you will be asked to **propose file change** and then to **Create Pull Request**. When you propose a change the edit will be sent to a collaborator for approval. It is very helpful if enter a description of your edit in the optional description field. Do not worry if you are unfamiliar with this GitHub terminology. Follow these instructions as good as you can, and we will be able to assist you before approving anything in case something is not right.
 
 If you make multiple commit by *proposing a file change* you won't see the edits of your previous commits before someone as approved the edits. If you are familiar with *forks* on GitHub you can use them to get around this. Otherwise you have to wait until updates are approved (which usually do not take a long time).
 
 ## Create a checklist
 To create a checklist you must have a GitHub account. If you do not have one, create one for free [here](https://github.com/join).
 
-To create a new checklist go to [the checklist folder](https://github.com/worldbank/DIMEwiki/tree/master/Topics/Checklists/checklists). In this folder create a file "*chk_checklistName*.js" where you replace *checklistName* with the unique checklist name you pick. Please keep the prefix *chk_* After you created the file you add checklist items the same way as already described in section on how to [edit an already existing checklist](#edit-a-checklist), but you are starting with an empty file. There you will find instructions on how to do it in the browser, but if you are familiar with GitHub you can also do this in a code editor by *cloning* the repository.
+Creating a new checklist is not as straightforward as just editing an existing one. Feel free to follow the instructions below, or send an email to dimewiki@worldbank.org and we will set it up for you and then you can just follow the instructions for editing it. If you email us, please send us the name of the checklist you are suggesting, and provide a short description. If the checklist is not populated within a few days after we have created it we will remove it from the wiki.
+
+To create a new checklist go to [the checklist folder](https://github.com/worldbank/DIMEwiki/tree/master/Topics/Checklists/checklists). In this folder create a file "*chk_checklistName*.js" where you replace *checklistName* with the unique checklist name you pick. Please keep the prefix *chk_* After you created the file you add checklist items the same way as already described in section on how to [edit an already existing checklist](#edit-a-checklist), but you are starting with an empty file. There you will find instructions on how to do it in the browser, but if you are familiar with GitHub you can also do this in a code editor by *cloning* the repository. To submit these changes to the DIME Wiki GitHub repository you need to follow the instruction in the *Edit a Checklist* on how to "commit" your changes.
 
 Once you have some checklist items in your new checklist on GitHub, you can create the checklist page on the wiki. Type the URL you want using this format: https://dimewiki.worldbank.org/wiki/Checklist:_Your_Checklist_Name. The checklist name here does not need to match the file name *checklist_name*.js but it is good if they are similar.
 
@@ -61,7 +63,7 @@ checklists = [
 ];
 ```
 
-After follwoing these three steps you can now see your checklist on the wiki page, and you can keep editing it using GitHub.
+After following these three steps you can now see your checklist on the wiki page, and you can keep editing it using GitHub.
 
 ## Brief technical documentation
 (KB: I will do this later)
