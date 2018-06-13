@@ -8,6 +8,8 @@
  [2,"Recode and label missing values: your data set should not have observations with -777, -88 or -9 values, for example"],
  [2,"Encode variables: all categorical variables should be saved as labeled numeric variables, no strings"],
  [2,"Don’t change variable names from questionnaire, except for nested repeat groups and reshaped roster data"],
+ [2,"Check sample representativeness of age, gender, urban/rural, region and religion"],
+ [2,"Check administrative data such as date, time, interviewer variables included"],
  [2,"Test variables consistency"],
  [2,"Identify and document outliers"],
  [2,"Compress dataset so it is saved in the most efficient format"],
