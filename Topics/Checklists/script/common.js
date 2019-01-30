@@ -6,7 +6,7 @@ $(function () {
 //This is a list of all checklist. Add to this array when you add a new checklist. For any other edits to the checklists, see the instructions here: https://github.com/worldbank/DIMEwiki/Topics/Checklists
 checklists = [
   'chk_surveyprep', 'chk_questcont', 'chk_questdata',
-  'chk_microdata', 'chk_datacleaning', 'checklist1', 'chk_Things to Check on a Graph'
+  'chk_microdata', 'chk_datacleaning', 'checklist1', 'chk_reviewgraphs'
 ];
 
 //Loop over all the checklists
