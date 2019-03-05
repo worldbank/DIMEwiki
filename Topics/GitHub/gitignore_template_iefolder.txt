@@ -3,7 +3,7 @@
 # .gitignore DIME template
 # https://github.com/worldbank/DIMEwiki/tree/master/Topics/GitHub
 #
-# (assumes iefolder folder structure but can be modified, see 
+# (assumes iefolder folder structure but can be modified, see
 # gitignore_template_general if you are not using iefolder)
 # We recommend that you create a .gitignore file using GitHub's tools and
 # replace the content of that file with the content of this file. Otherwise
@@ -12,7 +12,7 @@
 # so that the file ends up being names .gitignore.txt. Code editors like, Atom,
 # can edit the file extension, but if you are not familiar with how to do that,
 # we recommend that you generate an ignore file using GitHub and simply replace
-# the content of that file. 
+# the content of that file.
 #
 ########################################################################
 
@@ -62,6 +62,9 @@
 
 # Matlab
 !DataWork/**/*.m
+
+# Markdown
+!/**/*.md
 
 #######################
 # Include some additional file formats in any output folder

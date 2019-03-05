@@ -3,7 +3,7 @@
 # .gitignore DIME template
 # https://github.com/worldbank/DIMEwiki/tree/master/Topics/GitHub
 #
-# We recommend that you create a .gitignore file using GitHub's tools and 
+# We recommend that you create a .gitignore file using GitHub's tools and
 # replace the content of that file with the content of this file. Otherwise
 # you have to rename this file .gitignore. But if you rename the fine in a
 # regular folder window PCs and Macs are likely to keep the file extension
@@ -59,6 +59,9 @@
 
 # Matlab
 !/**/*.m
+
+# Markdown
+!/**/*.md
 
 #######################
 # Include some additional file formats in any output folder. You might have
