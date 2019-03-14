@@ -65,3 +65,11 @@
 !/**/Output/**/*.xml
 !/**/Output/**/*.eps
 !/**/Output/**/*.svg
+
+#######################
+## Include all the password/token files here.
+## This makes sure that they are not committed or pushed.
+password.r
+password.py
+API.py 
+password.do
