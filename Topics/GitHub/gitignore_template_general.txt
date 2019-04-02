@@ -59,6 +59,7 @@
 
 # Python
 !/**/*.py
+!/**/*.ipynb
 
 # Matlab
 !/**/*.m
