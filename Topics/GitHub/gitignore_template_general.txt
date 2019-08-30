@@ -82,8 +82,8 @@
 # Include all the files with passwords or tokens here. All files named
 # password or passwords are with this template ignored no matter which
 # format you are using. Additionally, all content in any folder called
-password or passwords are also ignored. NOTE that your project might be
-using different names and then you must edit the lines below accordingly.
+# password or passwords are also ignored. NOTE that your project might be
+# using different names and then you must edit the lines below accordingly.
 password.*
 passwords.*
 password/
