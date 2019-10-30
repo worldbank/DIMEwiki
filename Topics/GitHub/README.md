@@ -15,6 +15,7 @@ All repositories should always have a .gitignore file that controls which file a
   * The opposite to _binary file formats_ are _raw text file formats_. Examples are .do, .R, .txt, .tex, .csv etc. GitHub is intended to be used with raw text files
   * It is technically possible to upload _binary files_ to the repository, but they will slow down working with the repo if they are edited frequently.
 * Password files and tokens. The code we share on GitHub might need access to a password, for example to access an API, and they should be ignored, and instead being shared in the most secure way, and be copied to the clone manually.
+* There are system generated files - like `.DS_store` on Macs - that will make the repository messy if they are shared.
 
 #### Why use a template?
 
@@ -32,5 +33,7 @@ This template is shared under the MIT LICENSE and is therefore free for anyone t
 1. Once you have types `.gitignore`, a button will show up that says `Choose .gitignore: None`. Click that button and select any template. It does not matter which template you select as we will replace the content with the DIME Analytics template in the next step. We are only doing this to make sure the file is set up correctly.
 1. Either commit the file now, or do the next step and then commit. If you commit now, you can pull the edits and do the next step in your clone, otherwise you must continue in the browser.
 1. Replace the content in you .gitignore file with the content in [DIME Analytics template](https://github.com/worldbank/DIMEwiki/blob/master/Topics/GitHub/gitignore_template.txt) and then commit this file to the repository.
+
+If necessary, you can now make additions to the .gitignore file that are specific to your project. But you can also do that at any point in the future.
 
 ## DIME Analytics placeholder template
