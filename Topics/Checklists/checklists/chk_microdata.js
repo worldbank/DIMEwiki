@@ -7,7 +7,7 @@
   [2,"Remove or embargo any sensitive, potentially identifying information according to survey context. Possible examples include religion and ethnicity."],
 [1,"Data Cleaning"],
   [2,"Recommended: Use the JPAL/PII_Scan (https://github.com/J-PAL/stata_PII_scan) as a filter to check if all pii has been dropped."]
-  [2,"Does the ID variable uniquely identify observations?"],
+  [2,"Recommended: Install the iefieldkit package from DIME Wiki to use the iecodebook command for data cleaning purposes"],
   [2,"Does the ID variable uniquely identify observations?"],
   [2,"Are all variables labelled?"],
   [2,"Do all factor variables have value labels?"],
@@ -29,8 +29,8 @@
   [2,"Enumerator manuals"],
   [2, "Field work details: dates on which the field work occurred, total number of households visited, refusal rates, total number of households and individuals included in the final sample, problems that occurred during the administration of the survey (strikes, inclement weather, inability to enter parts of the country)"],
   [2,"Data cleaning documentation:"],
-    [3,"Codes for missing in survey and in dataset"],
-    [3,"Record of any corrections made in the associated do-file and in a separate document."],
+    [3,"Codes for missing values in survey and in dataset"],
+    [3,"Record changes made during the data cleaning process in an easy to share manner."],
     [3,"If variables were masked for de-identification, report method used"],
     [3,"If applicable, describe how to link observations across data files (e.g. through Master Dataset)"],
   [2,"Data dictionary and list of datasets included, if applicable"],
@@ -45,5 +45,6 @@
   [2,"If you are a returning user, all the projects that you have deposited will show up in the list either as “DRAFT” or “PROCESSED”. If you are a first-time user, click “Create New Project” to start with the process. Mandatory fields will be marked with stars. Provide “Title”, “Short name”, one paragraph of “Description” and Collaboration which will the email address of other Bank staff who may be authorized to make future edit and review this project. All the information provided here can be edited later."],
   [2,"Fill each field as much as possible based on project information, which can be found in concept note, baseline report or other project documents."],
   [2,"Load data files and other documents"],
+  [2,"If required, embargo access to data until completion of the project"]
   [2,"Review by Team Member: Send the links to project editing page to PIs, project manager, field coordinators and other team members for review and comments before submitting the project."],
   [2,"Review by Data Group:  After submitting the project, staff from Development Data Group will review the form and uploaded data files, confirm the successful documentation and access authority, or contact the project creator with further questions."]
