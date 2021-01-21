@@ -62,6 +62,7 @@ checklists = [
   'chk_microdata', 'chk_datacleaning', 'checklistName'
 ];
 ```
+Please **note** that only users with <code>interface-admin</code> access on [DIME Wiki](https://dimewiki.worldbank.org/index.php?title=Special%3AUserRights)  can edit the checklist array in [MediaWiki:Common.js](https://dimewiki.worldbank.org/wiki/MediaWiki:Common.js). Please email us at [dimeanalytics@worldbank.org](dimeanalytics@worldbank.org) with the the *checklistName* in the subject of the email. We will then email you with a confirmation when your checklist becomes visible.
 
 After following these three steps you can now see your checklist on the wiki page, and you can keep editing it using GitHub.
 
