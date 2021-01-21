@@ -21,7 +21,7 @@
    [2,"Will you use the tablet or separate GPS?"],
     [3,"If using a GPS unit, did you test the protocol for saving with filenames where unique IDs are linked to respondents?"],
     [3,"How long does it take to lock in a signal? Is this time within reasonable bounds? (Y/N)"],
-    [3,"Is the data point accurate? (Y/N)"],
+    [3,"Is the data point accurate? (Y/N)"]
     
    
     
